@@ -1,8 +1,125 @@
-html {
-  width: 100%;
+body * {
+  width=device-width;
+  box-sizing: border-box;
 }
-
-h1 {
+header{
+  background-color: #ffffff;
+}
+.baumkuchen-aki-logo{
+  float: left;
+}
+.baumkuchen-aki-icon{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1em;
+}
+#baumkuchen-aki-icon-home{
+  width: 3em;
+  padding-right: 1em;
+}
+#baumkuchen-aki-icon-tag{
+  width: 3em;
+  padding-right: 1em;
+}
+#baumkuchen-aki-icon-viewmodule{
+  width: 3em;
+  padding-right: 1em;
+}
+#baumkuchen-aki-icon-reorder{
+  width: 2em;
+}
+.grovalNavigation{
   width: 100%;
+  margin: 0;
   text-align: center;
 }
+.baumkuchen-aki-main{
+  margin: 30px;
+  text-align: center;
+  font-size: 10px;
+}
+h1{
+  font-family:'Vollkorn', serif;
+  font-size: 48px;
+}
+.baumkuchen-aki-subtitle{
+  font-family:'M PLUS 1p', sans-serif;
+  font-size: 24px;
+}
+.baumkuchen-aki-mainnews{
+  margin: 80px;
+  height: 10em;
+  border: solid 2px #cccccc;
+  text-align: center;
+  font-family:'M PLUS 1p', sans-serif;
+  font-size: 16px;
+}
+.baumkuchen-aki-contents{
+  font-family:'Vollkorn', serif;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 50;
+}
+
+
+.baumkuchen-aki-container{
+display: flex;
+width:900px;
+flex-wrap: wrap;
+
+}
+.baumkuchen-aki-containerItem{
+  display: block;
+  width:300px;
+}
+
+/* 
+  .container{
+    border-bottom: solid 1px #cccccc;
+    background-color: #ffffff;
+    min-width: 960px;
+  }
+
+  ul{
+    padding: 0;
+    clear: both;
+    text-align: left;
+  }
+  .picture{
+    margin: 10px 0px;
+  border-right: 1px solid #ddd;
+  text-align: center;
+  flex: 1;
+  }
+  
+  .schedulePicture{
+  padding: 10px;
+  background-image: url("icon/arrow.png");
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  border-bottom: 1px dotted #dddddd;
+  text-indent: 2em;
+  } 
+  .schedulePicture:last-child{
+  border-bottom: none; 
+  }    
+
+  a{
+    display: block;
+  text-decoration: none;
+  }
+  .top{
+    float: left;
+  }
+  .tab{
+    display: flex;
+  }
+  
+  .search:last-child{
+  border-right: none; 
+  }
+  
+  }
+  */
+
+
