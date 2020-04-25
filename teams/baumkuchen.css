@@ -6,3 +6,47 @@ h1 {
   width: 100%;
   text-align: center;
 }
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: aqua;
+}
+
+.image {
+  width: 80%;
+  height: 500px;
+  margin: 10px auto;
+  background-image: url(../bc.jpg);
+}
+
+.box h2 {
+  text-align: center;
+  font-family: 'Vollkorn', serif;
+}
+  ul {
+  border: 1px solid #000;
+  width: 50%;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+.list ul  {
+  text-align: center; 
+}
+.list ul li {
+  list-style-type: none;
+  text-align: center;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  background-color: dimgrey;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer p {
+  text-align: center;
+}
