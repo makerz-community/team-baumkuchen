@@ -1,3 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+//(和文)
+:lang(ja) {
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #3E3E3E;
+    font-size: _rem(16px);
+}
+    h1:lang(ja){
+        font-size: _rem(30px);
+        font-weight: bold;
+    }
+    h2:lang(ja){
+        font-size: _rem(28px);
+        font-weight: bold;
+    }
+    h3:lang(ja){
+        font-size: _rem(20px);
+        font-weight: bold;
+    }
+//（英文）
+:lang(en){
+    font-family: 'Vollkorn', sans-serif;
+    color: #3E3E3E;
+    font-size: _rem(18px);
+}
+    h1:lang(en){
+        font-size: _rem(48px);
+        font-weight: bold;
+    }
+    h2:lang(en){
+        font-size: _rem(26px);
+        font-weight: bold;
+    }
+    h3:lang(en){
+        font-size: _rem(20px);
+        font-weight: bold;
+    }
+  
 body * {
   width=device-width;
   box-sizing: border-box;
@@ -60,17 +99,36 @@ h1{
   text-align: center;
   font-weight: 50;
 }
-
+h3{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.baumkuchen-aki-title {
+  font-size: 12px;
+  margin: 10px 0 5px 0;
+  color: #1c0b1e;
+  font-weight: bold;
+}
+p{
+  font-size: 16px;
+  color: #666666;
+}
 
 .baumkuchen-aki-container{
+list-style: none;
 display: flex;
-width:900px;
 flex-wrap: wrap;
-
+justify-content: space-around;
 }
+
 .baumkuchen-aki-containerItem{
+  /* imgタグなのでblock要素に変えて使い勝手よくしとく */
   display: block;
   width:300px;
+  height: 200px;
+  margin :10px;
 }
-
+.baumkuchen-aki-schedule{
+  margin:40px,30px;
+}
 
