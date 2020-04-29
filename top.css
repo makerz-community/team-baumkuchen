@@ -1,39 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
-
-:lang(ja) {
-  font-family: 'M PLUS 1p', sans-serif;
-  color: #3E3E3E;
-  font-size: 16px;
-}
-
-/*（英文）*/
-:lang(en){
-  font-family: 'Vollkorn', sans-serif;
-  color: #3E3E3E;
-  font-size: 18px;
-}
-  h1:lang(en){
-      font-size: 38px;
-      font-weight: bold;
-  }
-  h2:lang(en){
-      font-size: 26px;
-      font-weight: bold;
-  }
-  h3:lang(en){
-      font-size: 20px;
-      font-weight: bold;
-  }
-
-
-
-
-
-
 body * {
   width=device-width;
   box-sizing: border-box;
+  padding: 2%;
 }
 header{
   background-color: #ffffff;
@@ -103,9 +71,11 @@ h2{
   margin-bottom: 10%;
 }
 .baumkuchen-aki-containerItem{
+  border-top: solid 4px #000000;
+  border-bottom: solid 4px #000000;
   display: flex;
-  width:400px;
-  height: 300px;
+  width:360px;
+  height: 240px;
   margin: auto;
   padding: 6%;
 }
@@ -117,8 +87,30 @@ h3{
   color: #1c0b1e;
   font-weight: bold;
 }
+.baumkuchen-aki-teams{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 16%;   
+}
+.baumkuchen-aki-teamItem{
+  border: 1px solid #000000;
+  display: flex;
+  width:360px;
+  height: 240px;
+  margin-left:-1px;
+}
+.baumkuchen-aki-foreword{
+  display: block;
+  text-align: center; 
+}
+.baumkuchen-aki-team{
+  margin: 0;
+  padding: 0;
+}
 
-
-
-/* 770以下の場合 */
+/*  
+ 770以下の場合
 @media screen ( max-width:770px) { 
+*/
