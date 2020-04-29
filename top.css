@@ -1,7 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+
+:lang(ja) {
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #3E3E3E;
+  font-size: 16px;
+}
+
+/*（英文）*/
+:lang(en){
+  font-family: 'Vollkorn', sans-serif;
+  color: #3E3E3E;
+  font-size: 18px;
+}
+  h1:lang(en){
+      font-size: 38px;
+      font-weight: bold;
+  }
+  h2:lang(en){
+      font-size: 26px;
+      font-weight: bold;
+  }
+  h3:lang(en){
+      font-size: 20px;
+      font-weight: bold;
+  }
 body * {
-  width=device-width;
+  width: device-width;
   box-sizing: border-box;
-  padding: 2%;
+  
 }
 header{
   background-color: #ffffff;
@@ -35,6 +62,7 @@ header{
   width: 100%;
   margin: 0;
   text-align: center;
+  padding: 1%;
 }
 .baumkuchen-aki-main{
   margin: 16%;
@@ -56,6 +84,8 @@ header{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 1%;
+
   }  
 h2{
   color: #666666;
@@ -92,7 +122,8 @@ h3{
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  margin-bottom: 16%;   
+  margin-bottom: 16%;
+  padding: 1%; 
 }
 .baumkuchen-aki-teamItem{
   border: 1px solid #000000;
