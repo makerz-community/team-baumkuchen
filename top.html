@@ -3,19 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href=https://unpkg.com/ress/dist/ress.min.css>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
   <title>Document</title>
   <link rel="stylesheet" href="top.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,600&display=swap');
-  </style>
   <script src="top.js"></script>
 </head>
 <body>
   <div>
     <header>
       
-      <img class="baumkuchen-aki-logo" src="./images/makerzlogo.jpeg"> <!-- チームアイコン -->
+      <img class="baumkuchen-aki-logo" src="./images/makerzlogo.png"> <!-- チームアイコン 虹ちゃんへ＞背景画像で設定したらめちゃくちゃレイアウトが崩れたので一旦imgタグのままにしてます。お手隙の時にやり方教えてください。 -->
       <div class="baumkuchen-aki-icon">    
         <img id="baumkuchen-aki-icon-home" src="./images/icon-home.svg">
         <img id="baumkuchen-aki-icon-tag" src="./images/icon-tag.svg"><!-- アイコン -->
@@ -27,26 +25,89 @@
     <img class="grovalNavigation" src="./images/top.jpeg"><!-- トップ画像 -->
 
     <div class="baumkuchen-aki-main">
-        <h1>We Are makerz</h1>
+        <h1 lang="en">We Are makerz</h1>
         <p class="baumkuchen-aki-subtitle">Learn the work of team development</p>
     </div>
     <div  class="baumkuchen-aki-mainnews">
       <p>2020/5/1 ウェブサイトをリリースしました</p>
     </div> 
-    <div class="baumkuchen-aki-contents">
-        <p>SCHEDULE</p>
+        <h2>SCHEDULE</h2>
+    <ul class="baumkuchen-aki-container">
+      <li class="baumkuchen-aki-schedule"> 
+        <h3>
+          "2020/4/26 Sun"
+          <span class="cgevent">STUDY</span>
+        </h3>
+        <img class="baumkuchen-aki-containerItem" src="./images/JavaScript.jpeg" alt="">
+        <p class="baumkuchen-aki-title">もくもく会実施</p>
+        </a>
+        <p>makerzのメンバーでもくもく会を実施しました！</p>
+      </li>
+
+      <li class="baumkuchen-aki-schedule">
+        <h3>
+          "2020/5/3 Sun"
+          <span class="cgevent">EVENT</span>
+        </h3>
+        <img class="baumkuchen-aki-containerItem" src="./images/swimwear.jpeg" alt="">
+        <p class="baumkuchen-aki-title">バーベキュー</p>
+    
+        <p>makerzのメンバーでバーベキュー！</p>
+      </li>
+
+      <li class="baumkuchen-aki-schedule">
+        <h3>
+          "2020/5/5Tue"
+          <span class="cgevent">STUDY</span>
+        </h3>
+        <img class="baumkuchen-aki-containerItem" src="./images/coollady.jpeg" alt="">
+        <p class="baumkuchen-aki-title">もくもく会実施</p>
+    
+        <p>makerzのメンバーでもくもく会を実施しました！</p>
+      </li>
+
+      <li class="baumkuchen-aki-schedule">
+        <h3>
+          "2020/5/6 Wed"
+          <span class="cgevent">BRIEFING</span>
+        </h3>
+        <img class="baumkuchen-aki-containerItem" src="./images/peoples.jpeg" alt="sample">
+        <p class="baumkuchen-aki-title">全体ミーティング</p>
+      
+        <p>makerzのメンバーで進捗を報告しました</p>
+      </li>
+      
 
 
 
-    </div>
-    <div class="baumkuchen-aki-container">
-      <img class="baumkuchen-aki-containerItem" src="./images/JavaScript.jpeg" alt="">
-      <img class="baumkuchen-aki-containerItem" src="./images/swimwear.jpeg" alt="" >
-      <img class="baumkuchen-aki-containerItem" src="./images/coollady.jpeg" alt="" >
-      <img class="baumkuchen-aki-containerItem" src="./images/peoples.jpeg" alt="" >
-      <img class="baumkuchen-aki-containerItem" src="./images/cat.jpeg" alt="" > 
-      <img class="baumkuchen-aki-containerItem" src="./images/PHP.jpeg" alt="" >
-    </div>
+      <li class="baumkuchen-aki-schedule">
+        <h3>
+          "2020/5/17 Sun"
+          <span class="cgevent">EVENT</span>
+        </h3>
+        <img class="baumkuchen-aki-containerItem" src="./images/cat.jpeg" alt="sample">
+        <p class="baumkuchen-aki-title">もくもく会実施</p>
+        <p>makerzのメンバーでもくもく会を実施しました！</p>
+      </li>
+
+
+
+
+
+      <li class="baumkuchen-aki-schedule">
+        <h3>
+          "2020/5/20 Sun"
+          <span class="cgevent">EVENT</span>
+        </h3>
+        <img class="baumkuchen-aki-containerItem" src="./images/PHP.jpeg" alt="sample">
+        <p class="baumkuchen-aki-title">バースデーパーティ</p>
+        <p>メンバーの誕生日会を開催しました</p>
+      </li>
+
+
+
+
+    </ul>
      <!-- moreのボタン -->
     <ul>
       <li class="#"><a href="#">AZUKI</a></li>
