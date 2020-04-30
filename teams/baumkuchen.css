@@ -1,8 +1,43 @@
 html {
   width: 100%;
+  height: auto;
 }
 
-h1 {
+
+
+
+.baum-mem-logo {
   width: 100%;
   text-align: center;
+  }
+
+.baum-left-img {
+padding-left:12%;
+
+}
+.baum-right-img{
+  padding-right:12% ;
+}
+.baum-aki{
+  display: flex;
+}
+.baum-niji{
+  display: flex;
+  
+}
+
+
+.baum-kai{
+  display: flex;
+  
+}
+.baum-pessi{
+  display: flex;
+  
+}
+
+
+
+li{
+  list-style: none;
 }
