@@ -5,29 +5,32 @@
   <title>Document</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="top.css">
-  <script src="top.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
-    <header>
-      <img class="baumkuchen-aki-logo" src="./images/makerzlogo.png"> <!-- チームアイコン 虹ちゃんへ＞背景画像で設定したらめちゃくちゃレイアウトが崩れたので一旦imgタグのままにしてます。お手隙の時にやり方教えてください。 -->
-      <div class="baumkuchen-aki-icon">    
-        <img id="baumkuchen-aki-icon-home" src="./images/icon-home.svg">
-        <img id="baumkuchen-aki-icon-tag" src="./images/icon-tag.svg"><!-- アイコン -->
-        <img id="baumkuchen-aki-icon-viewmodule" src="./images/icon-viewmodule.svg"><!-- アイコン -->
-        <img id="baumkuchen-aki-icon-reorder" src="./images/icon-reorder.svg"><!-- アイコン -->
-      </div>
-    </header>
+    <header class="site-header">
+      <h1 class="baumkuchen-aki-logo"><img src="./images/makerzlogo.png" alt="makerz"></h1>
+      <nav class="gnav">
+          <ul class="baumkuchen-aki-icon">
+              <li class="baumkuchen-aki-icon-item"></li>
+              <li class="baumkuchen-aki-icon-item"></li>
+              <li class="baumkuchen-aki-icon-item"></li>
+              <li class="baumkuchen-aki-icon-item"></li>
+          </ul>
+      </nav>
+  </header>
+
+
     <img class="grovalNavigation" src="./images/top.jpeg"><!-- トップ画像 -->
     <div class="baumkuchen-aki-main">
-        <h1 lang="en">We Are makerz</h1>
+        <h2 lang="en">We Are makerz</h1>
         <p class="baumkuchen-aki-subtitle">Learn the work of team development</p>
     </div>
     <div  class="baumkuchen-aki-mainnews">
     <p>2020/5/1 ウェブサイトをリリースしました</p>
     </div> 
-    <h2>SCHEDULE</h2>
+    <h2 lang="en">SCHEDULE</h2>
     <ul class="baumkuchen-aki-container">
       <li class="baumkuchen-aki-schedule"> 
         <h3>
@@ -109,5 +112,6 @@
         </div>
       </li>
     </ul>
+    <script src="top.js"></script>
 </body>
 </html>

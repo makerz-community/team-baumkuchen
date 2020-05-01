@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+＠import "style.css";
 
 :lang(ja) {
   font-family: 'M PLUS 1p', sans-serif;
@@ -28,36 +27,44 @@
 body * {
   width: device-width;
   box-sizing: border-box;
-  
 }
-header{
-  background-color: #ffffff;
+.site-header{
+  background: #ffffff;
+  display: flex;
+  padding: 10px 10px;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
 }
-.baumkuchen-aki-logo{
-  float: left;
-  padding-left: 2%;
+.baumkuchen-aki-logo img{
+  height: 80px;
+  width: auto;
 }
 .baumkuchen-aki-icon{
   display: flex;
-  justify-content: flex-end;
-  padding-top: 2%;
+  margin-top: 20px;
+
 }
-#baumkuchen-aki-icon-home{
-  width: 5%;
-  padding-right: 2%;
+.baumkuchen-aki-icon-item{
+  margin-left: 30px;
 }
-#baumkuchen-aki-icon-tag{
-  width: 5%;
-  padding-right: 2%;
+
+.baumkuchen-aki-icon :nth-child(1) {
+	list-style-image: url(./images/icon-home.svg);
 }
-#baumkuchen-aki-icon-viewmodule{
-  width: 5%;
-  padding-right: 2%;
+.baumkuchen-aki-icon :nth-child(2) {
+	list-style-image: url(./images/icon-tag.svg);
 }
-#baumkuchen-aki-icon-reorder{
-  width: 5%;
-  padding-right: 2%;
+.baumkuchen-aki-icon :nth-child(3) {
+	list-style-image: url(./images/icon-viewmodule.svg);
 }
+.baumkuchen-aki-icon :nth-child(4) {
+  list-style-image: url(./images/icon-reorder.svg) 
+}
+
+
+
 .grovalNavigation{
   width: 100%;
   margin: 0;
@@ -85,13 +92,13 @@ header{
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 1%;
-
   }  
 h2{
   color: #666666;
   text-align: center;
   font-weight: bolder;
   margin-bottom: 8%;
+  font-size:20em;
 }
 .cgevent{
   font-size: x-small;
@@ -105,7 +112,7 @@ h2{
   border-bottom: solid 4px #000000;
   display: flex;
   width:360px;
-  height: 240px;
+  height: 260px;
   margin: auto;
   padding: 6%;
 }
@@ -141,7 +148,10 @@ h3{
   padding: 0;
 }
 
-/*  
- 770以下の場合
-@media screen ( max-width:770px) { 
-*/
+
+ /*width770以下の場合 */
+@media screen ( max-width:770px) {
+  
+}
+
+
