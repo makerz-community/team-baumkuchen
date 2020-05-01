@@ -54,6 +54,7 @@ div#test {
     リセットcss
 ========================================= */
 
+@import "../style.css"
 
 header {
   background-image: url(../teams/images/bk.png);
