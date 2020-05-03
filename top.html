@@ -4,25 +4,42 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
   <link rel="stylesheet" href="top.css">
+  <link rel="stylesheet" href="swiper.css">
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
     <header class="site-header">
-      <h1 class="baumkuchen-aki-logo"><img src="./images/makerzlogo.png" alt="makerz"></h1>
-      <nav class="gnav">
-          <ul class="baumkuchen-aki-icon">
-              <li class="baumkuchen-aki-icon-item"></li>
-              <li class="baumkuchen-aki-icon-item"></li>
-              <li class="baumkuchen-aki-icon-item"></li>
-              <li class="baumkuchen-aki-icon-item"></li>
-          </ul>
-      </nav>
+    <h1 class="baumkuchen-aki-logo"><img src="./images/makerzlogo.png" alt="makerz"></h1>
+    <nav class="gnav">
+        <ul class="baumkuchen-aki-icon">
+            <li class="baumkuchen-aki-icon-item"></li>
+            <li class="baumkuchen-aki-icon-item"></li>
+            <li class="baumkuchen-aki-icon-item"></li>
+            <li class="baumkuchen-aki-icon-item"></li>
+        </ul>
+    </nav>
   </header>
+     
+          <!-- 各スライド -->
+    <div class="swiper-container">
+      <!-- メイン表示部分 -->
+      <div class="swiper-wrapper">
+        <!-- 各スライド -->
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
 
 
-    <img class="grovalNavigation" src="./images/top.jpeg"><!-- トップ画像 -->
+
+
+
     <div class="baumkuchen-aki-main">
         <h2 lang="en">We Are makerz</h1>
         <p class="baumkuchen-aki-subtitle">Learn the work of team development</p>
@@ -112,6 +129,7 @@
         </div>
       </li>
     </ul>
-    <script src="top.js"></script>
+    <script src="swiper.min.js"></script>
+    <script src="top.js"></script> 
 </body>
 </html>
