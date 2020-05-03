@@ -1,8 +1,164 @@
-html {
-  width: 100%;
+@charset "UTF-8";
+/*============================================================
+news
+=============================================================*/
+/*h2の見出し*/
+.news h2::before {
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 31%;
 }
 
-h1 {
+.news h2::after {
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  position: absolute;
+  top: 0;
+  right: 31%;
+}
+
+.news h2 {
+  text-align: center;
+  position: relative;
+}
+
+.news {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10rem;
+  position: relative;
+  /*news一覧*/
+}
+
+.news__box {
+  border: solid 1px #333;
+  width: calc(100% / 3);
+  padding: 10px;
+  min-height: 8rem;
+}
+
+.news__box-wapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.news .who {
   width: 100%;
+  /*network photo*/
+  /*network photoの中の白文字*/
+  /*memmbers12の写真*/
+}
+
+.news .who__bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(#faf8f70a), to(#0d0d0dbd)), url("images/network.jpg");
+  background: linear-gradient(#faf8f70a, #0d0d0dbd), url("images/network.jpg");
+  background-position: center;
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+  margin-top: 5rem;
+}
+
+.news .who-taxt {
+  color: #fff;
+  line-height: 20rem;
+  text-shadow: black 2px 1px 3px;
+  position: absolute;
+  left: 40%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.news .who-taxt::before, .news .who-taxt::after {
+  content: none;
+}
+
+.news .who p {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.news .who p:nth-child(2n-1) {
+  margin-top: 5rem;
+}
+
+.news .who__memmber {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 0;
+  /*写真の下にできる余白を打ち消す*/
+  margin-top: 5rem;
+}
+
+.news .who__memmber div {
+  -ms-flex-preferred-size: calc(100%/6);
+      flex-basis: calc(100%/6);
+  min-width: calc(100%/6);
+  /*makerzのロゴのみborder入れる*/
+}
+
+.news .who__memmber div img {
+  width: 100%;
+  height: auto;
+  max-width: 20rem;
+  min-width: 7.7rem;
+}
+
+.news .who__memmber div:first-child {
+  border: 1px solid #333;
+}
+
+/*============================================================
+access
+=============================================================*/
+.access {
+  position: relative;
+}
+
+.access iframe {
+  width: 100%;
+  height: 500px;
+  margin-top: 5rem;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.access .access__wapper {
+  width: 23rem;
+  height: 30rem;
+  position: absolute;
+  top: 13%;
+  right: 9%;
+  background-color: #fff;
+  padding: 3rem;
+}
+
+.access .access__wapper h2 {
+  margin: 2rem;
   text-align: center;
 }
+
+.access .access__wapper p:nth-child(2n-1) {
+  padding-bottom: 2rem;
+}
+/*# sourceMappingURL=top.css.map */
