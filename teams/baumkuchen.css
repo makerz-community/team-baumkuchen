@@ -1,16 +1,26 @@
 
 @import "../style.css";
 
-.baum-mem-logo{
+
+
+
+h2{
+  text-align: center;
+}
+h3{
   text-align: center;
 }
 
 .baum-left-img {
  padding-left:12%;
+ width:440px ;
+ height: 440px;
 
 }
 .baum-right-img{
   padding-right:12% ;
+  width:440px ;
+ height: 440px;
 }
 .baum-aki{
   display: flex;
@@ -41,4 +51,10 @@ ul{
 
 li{
   list-style: none;
+}
+
+/* ここからreference*/
+
+.ref-contens{
+  display: flex;
 }
