@@ -1,4 +1,4 @@
-@import "../style.css"
+@import "../style.css";
 
 /* ========================================
     リセットcss
@@ -56,60 +56,70 @@ div#test {
     リセットcss
 ========================================= */
 
-
-
-header {
-  background-image: url(../teams/images/bk.png);
-  background-repeat: no-repeat;
+body * {
+  width: device-width;
+  box-sizing: border-box;
+}
+.site-header{
+  background: #ffffff;
+  display: flex;
+  padding: 10px 10px;
+  position: fixed;
+  justify-content: space-between;
   width: 100%;
-  height: 70px;
-  background-color: aqua;
+  height: 100px;
+}
+.baumkuchen-aki-logo img{
+  height: 80px;
+  width: auto;
+}
+.baumkuchen-aki-icon{
+  display: flex;
+  margin-top: 20px;
+
+}
+.baumkuchen-aki-icon-item{
+  margin-left: 30px;
 }
 
-.image {
-  max-width: 100%;
-  height: 500px;
+.baumkuchen-aki-icon :nth-child(1) {
+	list-style-image: url(../images/icon-home.svg);
+}
+.baumkuchen-aki-icon :nth-child(2) {
+	list-style-image: url(../images/icon-tag.svg);
+}
+.baumkuchen-aki-icon :nth-child(3) {
+	list-style-image: url(../images/icon-viewmodule.svg);
+}
+.baumkuchen-aki-icon :nth-child(4) {
+  list-style-image: url(../images/icon-reorder.svg) 
+}
+
+
+/* ========================================
+    main
+========================================= */
+.baum-main img{
+  width: 100%;
+  height: auto;
   margin: 10px auto;
   background-image: url(../teams/images/bc.jpg);
   background-repeat: no-repeat;
-}
-.ac {
- width: 100%;
- height: 30%;
- display: flex;
- margin-bottom: 20px;
- height: 30px;
-}
-.ac #box1 {
-  background-color: gold;
-  width: 45%;
-  margin-top: auto;
-}  
-.ac #box1 .fas fa-angle-double-left {
-  position: absolute;
-  float: right;
-
-}     
-
-.ac #box2 {
-  background-color: greenyellow;
-  width: 10%;
-
+  display: flex;
+  justify-content: center;
 }
 
-.ac #box3 {
-  background-color: indigo;
-  width: 45%;
-  margin-top: auto;
+.baum-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 
-.ac  #box2 h2{
-  text-align: center;
-  font-family: 'Vollkorn', serif;
-  margin-top: auto;
-}
-  ul {
+
+
+.baum_ul{
   border: 1px solid #000;
   width: 50%;
   padding-bottom: 30px;
@@ -122,84 +132,26 @@ header {
 .list ul li {
   list-style-type: none;
   text-align: center;
-  font-family: 'M PLUS 1p', sans-serif;
+}
+/* ========================================
+    main終
+========================================= */
+
+
+.grovalNavigation{
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 1%;
 }
 
-
-/* ボタン全体 */
-.flowbtn7{
-  border-radius:50%;
-  position:relative;
-  display:inline-block;
-  width:50px;
-  height:50px;
-  font-size:30px;
-  color:#fff!important;
-  text-decoration:none;
-  transition:.5s;			
-  }
-  /* アイコンをど真ん中に*/
-  .flowbtn7 i{
-  position:absolute;
-  top:50%;
-  left:50%;
-  -ms-transform:translate(-50%,-50%);
-  -webkit-transform:translate(-50%,-50%);
-  transform:translate(-50%,-50%);
-  }
-  /* ulタグの内側余白を０にする */
-  ul.snsbtniti{
-  padding:0!important;
-  }
-  /* ボタン全体の位置 */
-  .snsbtniti{
-  display:flex;
-  flex-flow:row wrap;
-  justify-content:space-around;
-  }
- 
-  /* ボタンにマウスを乗せた時 */
-  .flowbtn7:hover{
-  -webkit-transform:translateY(-5px);
-  -ms-transform:translateY(-5px);
-  transform:translateY(-5px);
-  }
-  /* Twitter */
-  .fl_tw7{
-  background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);
-  }
-  /* Instagramアイコン位置 */
-  .insta_btn7 .fa-instagram{
-  font-size:35px;	
-  }
-  /* Instagram紫グラデ背景 */
-  .insta_btn7{
-  background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
-  background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
-  overflow:hidden;	
-  }
-  /* Instagramオレンジグラデ背景 */
-  .insta_btn7:before{
-  content: '';
-  position:absolute;
-  top:27px;
-  left:-12px;
-  width:59px;
-  height:40px;
-  background:-webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
-  background:radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
-  }
-  /* Facebook */
-  .fl_fb7{
-  background: linear-gradient(135deg, #6699ff 0%,#3b5998 100%);
-  }  
-
- 
-
-  footer .kai_footer li {
-    list-style: none;
-    display: flex;
-  }
+/* ========================================
+    footer
+========================================= */
 
 
-
+footer {
+  background-color: blueviolet;
+  width: auto;
+  height: 7rem;
+}
