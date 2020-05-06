@@ -94,7 +94,12 @@ body * {
 .baumkuchen-aki-icon :nth-child(4) {
   list-style-image: url(../images/icon-reorder.svg) 
 }
-
+.grovalNavigation{
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 1%;
+}
 
 /* ========================================
     main
@@ -115,6 +120,18 @@ body * {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+h2::before {
+  font-family:'Font Awesome 5 Free';
+  content: "\f100";
+  font-weight: 900;
+}
+h2::after {
+  font-family:'Font Awesome 5 Free';
+  content: "\f101";
+  font-weight: 900;
+}
+
+
 
 
 
@@ -125,11 +142,11 @@ body * {
   padding-bottom: 30px;
   margin: 0 auto;
 }
-.list ul  {
+.kai-list ul  {
   text-align: center; 
   margin-bottom: 30px;
 }
-.list ul li {
+.kai-list ul li {
   list-style-type: none;
   text-align: center;
 }
@@ -138,12 +155,7 @@ body * {
 ========================================= */
 
 
-.grovalNavigation{
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  padding: 1%;
-}
+
 
 /* ========================================
     footer
