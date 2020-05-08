@@ -92,7 +92,7 @@ body * {
 	list-style-image: url(../images/icon-viewmodule.svg);
 }
 .baumkuchen-aki-icon :nth-child(4) {
-  list-style-image: url(../images/icon-reorder.svg) 
+  list-style-image: url(../images/icon-reorder.svg)
 }
 .grovalNavigation{
   width: 100%;
@@ -142,11 +142,12 @@ h2::after {
   padding-bottom: 30px;
   margin: 0 auto;
 }
-.kai-list ul  {
-  text-align: center; 
+.kai-list .baum_ul .main-li {
+  margin-top: 10px;
+  text-align: center;
   margin-bottom: 30px;
 }
-.kai-list ul li {
+.kai-list .baum_ul .main-li {
   list-style-type: none;
   text-align: center;
 }
@@ -161,9 +162,114 @@ h2::after {
     footer
 ========================================= */
 
+body,
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+}
 
 footer {
-  background-color: blueviolet;
-  width: auto;
-  height: 7rem;
+  margin-top: auto;
+}
+
+.flexbox-container {
+  margin-top: 20px;
+  display: flex;
+  background-color: black;
+  height: 80px;
+}
+
+
+.flexbox-container2 {
+  display: flex;
+  text-align: center;
+  height: 45px;
+  margin: auto;
+}
+
+
+/* ボタン全体 */
+.flowbtn7{
+border-radius:50%;
+position:relative;
+display:inline-block;
+width:50px;
+height:50px;
+color:#fff;
+text-decoration:none;
+transition:.5s;
+}
+/* アイコンをど真ん中に*/
+.flowbtn7 i{
+position:absolute;
+top:50%;
+left:50%;
+-ms-transform:translate(-50%,-50%);
+-webkit-transform:translate(-50%,-50%);
+transform:translate(-50%,-50%);
+color: #fff;
+font-size: 30px;
+}
+/* ulタグの内側余白を０にする */
+ul.snsbtniti{
+padding:0!important;
+}
+/* ボタン全体の位置 */
+.snsbtniti{
+display:flex;
+flex-flow:row wrap;
+justify-content:space-around;
+}
+/* ボタン同士の余白 */
+.snsbtniti li{
+flex:0 20px 20px;
+text-align:center !important;
+margin-left: 10px;
+}
+/* ボタンにマウスを乗せた時 */
+.flowbtn7:hover{
+-webkit-transform:translateY(-5px);
+-ms-transform:translateY(-5px);
+transform:translateY(-5px);
+}
+/* Twitter */
+.fl_tw7{
+background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);
+}
+/* Instagramアイコン位置 */
+.insta_btn7 .fa-instagram{
+font-size:35px;
+}
+/* Instagram紫グラデ背景 */
+.insta_btn7{
+background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+overflow:hidden;
+}
+/* Instagramオレンジグラデ背景 */
+.insta_btn7:before{
+content: '';
+position:absolute;
+top:27px;
+left:-12px;
+width:59px;
+height:40px;
+background:-webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+background:radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+}
+/* Facebook */
+.fl_fb7{
+background: linear-gradient(135deg, #6699ff 0%,#3b5998 100%);
+font-size: 20px;
+}
+
+/* ========================================
+    レスポンシブ
+========================================= */
+
+@media(max-width: 600px) {
+.baum_ul{
+  width: 90%;
+}
 }
