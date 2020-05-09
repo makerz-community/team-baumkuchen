@@ -1,4 +1,4 @@
-＠import "style.css";
+@import "style.css";
 
 :lang(ja) {
   font-family: 'M PLUS 1p', sans-serif;
@@ -43,14 +43,14 @@ body * {
 }
 .baumkuchen-aki-logo{
   margin:0px;
-  padding-top: 6px;
 }
 .baumkuchen-aki-icon{
   display: flex;
-  margin-top: 10px;
 }
 .baumkuchen-aki-icon-item{
   margin-left: 30px;
+  line-height:30px;
+  vertical-align: middle;
 }
 .baumkuchen-aki-icon :nth-child(1) {
 	list-style-image: url(./images/icon-home.svg);
