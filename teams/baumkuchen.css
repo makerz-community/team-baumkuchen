@@ -1,8 +1,60 @@
-html {
-  width: 100%;
+
+@import "../style.css";
+
+
+
+
+h2{
+  text-align: center;
+}
+h3{
+  text-align: center;
 }
 
-h1 {
-  width: 100%;
-  text-align: center;
+.baum-left-img {
+ padding-left:12%;
+ width:440px ;
+ height: 440px;
+
+}
+.baum-right-img{
+  padding-right:12% ;
+  width:440px ;
+ height: 440px;
+}
+.baum-aki{
+  display: flex;
+}
+.baum-niji{
+  display: flex;
+  
+}
+
+
+.baum-kai{
+  display: flex;
+  
+}
+.baum-pessi{
+  display: flex;
+  
+}
+
+.pe-list{
+  text-align: right;
+}
+ul{
+  margin-top: 16px;
+  padding-left: 10px;
+  
+}
+
+li{
+  list-style: none;
+}
+
+/* ここからreference*/
+
+.ref-contents{
+  display: flex;
 }
