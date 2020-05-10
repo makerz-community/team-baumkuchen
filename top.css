@@ -121,27 +121,7 @@ news
   border: 1px solid #333;
 }
 
-@media screen and (max-width: 770px) {
-  .news__box-wapper {
-    /*news一覧*/
-    display: block;
-  }
-  .news__box {
-    width: 100%;
-  }
-  .news .who-taxt::before {
-    /*network photoの中の白文字の▶◀*/
-    left: 10%;
-  }
-  .news .who-taxt::after {
-    right: 10%;
-  }
-  .news .who__memmber div img {
-    /*memmbers12の写真*/
-    max-width: 13rem;
-    min-width: 2.7rem;
-  }
-}
+
 
 /*============================================================
 access
@@ -251,10 +231,7 @@ body * {
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 770px) {
-  .access__wapper {
-    display: none;
-  }
+
 }
 /*# sourceMappingURL=top.css.map */
 
