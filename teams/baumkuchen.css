@@ -1,6 +1,289 @@
 
 @import "../style.css";
 
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style:normal;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+div#test {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+/* ========================================
+    リセットcss
+========================================= */
+
+body * {
+  width: device-width;
+  box-sizing: border-box;
+}
+.site-header{
+  background: #ffffff;
+  display: flex;
+  padding: 10px 10px;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+.baumkuchen-aki-logo img{
+  height: 80px;
+  width: auto;
+}
+.baumkuchen-aki-icon{
+  display: flex;
+  margin-top: 20px;
+
+}
+.baumkuchen-aki-icon-item{
+  margin-left: 30px;
+}
+
+.baumkuchen-aki-icon :nth-child(1) {
+	list-style-image: url(../images/icon-home.svg);
+}
+.baumkuchen-aki-icon :nth-child(2) {
+	list-style-image: url(../images/icon-tag.svg);
+}
+.baumkuchen-aki-icon :nth-child(3) {
+	list-style-image: url(../images/icon-viewmodule.svg);
+}
+.baumkuchen-aki-icon :nth-child(4) {
+  list-style-image: url(../images/icon-reorder.svg)
+}
+.grovalNavigation{
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 1%;
+}
+
+/* ========================================
+    main
+========================================= */
+.baum-main img{
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  background-image: url(../teams/images/bc.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.news h2::before, h2::after{
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+  }
+
+ .news h2::before{
+    left: 27%;
+  }
+ .news h2::after {
+    transform: scale(-1, 1);
+    right: 27%;
+  }
+ .news h2 {
+    text-align: center;
+    position: relative;
+  }
+.baum-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+}
+
+
+.baum_ul{
+  border: 1px solid #000;
+  width: 50%;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+p {
+  text-align: center;
+}
+
+.kai-list {
+  margin-top: 40px;
+}
+
+/* ========================================
+    main終
+========================================= */
+
+
+
+
+/* ========================================
+    footer
+========================================= */
+
+body,
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.flexbox-container {
+  margin-top: 20px;
+  display: flex;
+  background-color: black;
+  height: 80px;
+}
+
+
+.flexbox-container2 {
+  display: flex;
+  text-align: center;
+  height: 45px;
+  margin: auto;
+}
+
+
+/* ボタン全体 */
+.flowbtn7{
+border-radius:50%;
+position:relative;
+display:inline-block;
+width:50px;
+height:50px;
+color:#fff;
+text-decoration:none;
+transition:.5s;
+}
+/* アイコンをど真ん中に*/
+.flowbtn7 i{
+position:absolute;
+top:50%;
+left:50%;
+-ms-transform:translate(-50%,-50%);
+-webkit-transform:translate(-50%,-50%);
+transform:translate(-50%,-50%);
+color: #fff;
+font-size: 30px;
+}
+/* ulタグの内側余白を０にする */
+ul.snsbtniti{
+padding:0!important;
+}
+/* ボタン全体の位置 */
+.snsbtniti{
+display:flex;
+flex-flow:row wrap;
+justify-content:space-around;
+}
+/* ボタン同士の余白 */
+.snsbtniti li{
+flex:0 20px 20px;
+text-align:center !important;
+margin-left: 10px;
+}
+/* ボタンにマウスを乗せた時 */
+.flowbtn7:hover{
+-webkit-transform:translateY(-5px);
+-ms-transform:translateY(-5px);
+transform:translateY(-5px);
+}
+/* Twitter */
+.fl_tw7{
+background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);
+}
+/* Instagramアイコン位置 */
+.insta_btn7 .fa-instagram{
+font-size:35px;
+}
+/* Instagram紫グラデ背景 */
+.insta_btn7{
+background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+overflow:hidden;
+}
+/* Instagramオレンジグラデ背景 */
+.insta_btn7:before{
+content: '';
+position:absolute;
+top:27px;
+left:-12px;
+width:59px;
+height:40px;
+background:-webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+background:radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+}
+/* Facebook */
+.fl_fb7{
+background: linear-gradient(135deg, #6699ff 0%,#3b5998 100%);
+font-size: 20px;
+}
+
+/* ========================================
+    レスポンシブ
+========================================= */
+
+@media(max-width: 770px) {
+.baum_ul{
+  width: 90%;
+}
+}
+
+
+@import "../style.css";
+
 
 
 h2{
@@ -88,3 +371,4 @@ li{
 .ref-button{
   text-align: -webkit-center;
 }
+

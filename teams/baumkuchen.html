@@ -1,5 +1,93 @@
 <!DOCTYPE html>
 <html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../teams/baumkuchen.css">
+  <link rel="stylesheet" href="../teams/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+  <!--header-->
+  <header class="site-header">
+    <h1 class="baumkuchen-aki-logo"><img src="./images/makerzlogo.png" alt="makerz"></h1>
+    <nav class="gnav">
+      <ul class="baumkuchen-aki-icon">
+        <li class="baumkuchen-aki-icon-item">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </li>
+        <li class="baumkuchen-aki-icon-item">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z" />
+        </li>
+        <li class="baumkuchen-aki-icon-item">
+          <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z" />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </li>
+        <li class="baumkuchen-aki-icon-item">
+          <path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z" />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!--header-->
+
+
+  <!--main-->
+  <div class="baum-main">
+    <img src="../teams/images/bc.jpg" alt="メイン画像">
+  </div>
+  <section class="news" id="news">
+    <h2 lang="en">ACTIVTY</h2>
+    </div>
+
+    <div class="kai-list">
+      <ul class="baum_ul">
+        <li class="banm_li">
+          <p>2020/4/5 <span>TwitterでのコミュニティTeam</span></p>
+          <p>2020/4/15 <span>共同製作にて初のHP作成。</span></p>
+        </li>
+      </ul>
+    </div>
+    <!--main-->
+    <div id="wrapper"></div>
+    <p><a href="../top.html">HOME</a></p>
+    <footer>
+      <section class='flexbox-container'>
+        <section class='flexbox-container1'>
+          <h1 class="baumkuchen-aki-logo"><img src="./images/makerzlogo.png" alt="makerz"></h1>
+        </section>
+
+        <section class='flexbox-container2'>
+          <ul class="snsbtniti">
+            <li><a href="TwitterのプロフィールURL" class="flowbtn7 fl_tw7"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="インスタのプロフィールURL" class="flowbtn7 insta_btn7"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="FacebookページのURL" class="flowbtn7 fl_fb7"><i class="fab fa-facebook-f"></i></a></li>
+          </ul>
+        </section>
+      </section>
+    </footer>
+    <script>
+      $(function () {
+        $('a[href^="#"]').click(function () {
+          var speed = 500; //移動スピードの設定
+          var href = $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $("html, body").animate({ scrollTop: position }, speed, "swing");
+          return false;
+        });
+      });
+    </script>
+</body>
+
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="baumkuchen.css">
@@ -108,4 +196,5 @@
 
 
   </body>
+
 </html>
