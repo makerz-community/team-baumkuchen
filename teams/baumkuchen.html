@@ -44,49 +44,8 @@
       </ul>
     </div>
     <!--main-->
-    <div id="wrapper"></div>
-    <p><a href="../top.html">HOME</a></p>
-    <footer>
-      <section class='flexbox-container'>
-        <section class='flexbox-container1'>
-          <h1 class="baumkuchen-aki-logo"><img src="./images/makerzlogo.png" alt="makerz"></h1>
-        </section>
 
-        <section class='flexbox-container2'>
-          <ul class="snsbtniti">
-            <li><a href="TwitterのプロフィールURL" class="flowbtn7 fl_tw7"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="インスタのプロフィールURL" class="flowbtn7 insta_btn7"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="FacebookページのURL" class="flowbtn7 fl_fb7"><i class="fab fa-facebook-f"></i></a></li>
-          </ul>
-        </section>
-      </section>
-    </footer>
-    <script>
-      $(function () {
-        $('a[href^="#"]').click(function () {
-          var speed = 500; //移動スピードの設定
-          var href = $(this).attr("href");
-          var target = $(href == "#" || href == "" ? 'html' : href);
-          var position = target.offset().top;
-          $("html, body").animate({ scrollTop: position }, speed, "swing");
-          return false;
-        });
-      });
-    </script>
-</body>
-
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="baumkuchen.css">
-
-    <title>baumkuchen</title>
-
-    <link rel="stylesheet" href="../style.css">
-
-  </head>
-  
-  <body>
-   
+    <!-- member -->
     <div class="baum-mem-logo">
       <h2 lang="en">MEMBER</h2>
     </div>
@@ -155,7 +114,7 @@
                 <img class="baum-right-img"src="https://ca.slack-edge.com/T011EFXQ00L-U011D8ZGLCW-1bdd6db88670-512" class="right-img">
            </div> 
        </div> 
-      
+       <!-- reference -->
             
      <h2 lang="en">REFERENCE</h2>
      <h3>メンバーが学習にあたって参考にしたサイトや勉強方を紹介</h3>
@@ -181,7 +140,40 @@
        <h3 lang="en">ALL REFERENCES</h3>
      </div>
 
+      
+    <div id="wrapper"></div>
+    <p><a href="../top.html">HOME</a></p>
+    <footer>
+      <section class='flexbox-container'>
+        <section class='flexbox-container1'>
+          <h1 class="baumkuchen-aki-logo"><img src="./images/makerzlogo.png" alt="makerz"></h1>
+        </section>
 
-  </body>
+        <section class='flexbox-container2'>
+          <ul class="snsbtniti">
+            <li><a href="TwitterのプロフィールURL" class="flowbtn7 fl_tw7"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="インスタのプロフィールURL" class="flowbtn7 insta_btn7"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="FacebookページのURL" class="flowbtn7 fl_fb7"><i class="fab fa-facebook-f"></i></a></li>
+          </ul>
+        </section>
+      </section>
+      
+    </footer>
+    <script>
+      $(function () {
+        $('a[href^="#"]').click(function () {
+          var speed = 500; //移動スピードの設定
+          var href = $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $("html, body").animate({ scrollTop: position }, speed, "swing");
+          return false;
+        });
+      });
+    </script>
+</body>
 
+  
+
+  
 </html>
