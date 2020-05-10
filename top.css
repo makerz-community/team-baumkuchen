@@ -1,164 +1,9 @@
-
 @charset "UTF-8";
-/*============================================================
-news
-=============================================================*/
-/*h2の見出し*/
-.news h2::before, .news h2::after {
-  content: "\f0da";
-  font-family: "Font Awesome 5 Free";
-  font-size: 2rem;
-  font-weight: 900;
-  position: absolute;
-  top: 0;
-}
-
-.news h2::before {
-  left: 27%;
-}
-
-.news h2::after {
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
-  right: 27%;
-}
-
-.news h2 {
-  text-align: center;
-  position: relative;
-}
-
-/*news一覧*/
-.news {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 10rem;
-  position: relative;
-}
-
-.news__box {
-  border: solid 1px #333;
-  width: calc(100% / 3);
-  padding: 10px;
-  min-height: 8rem;
-}
-
-.news__box-wapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 5rem;
-}
-
-.news .who {
-  width: 100%;
-}
-
-.news .who__bg {
-  /*network photo*/
-  background: -webkit-gradient(linear, left top, left bottom, from(#faf8f70a), to(#0d0d0dbd));
-  background: linear-gradient(#faf8f70a, #0d0d0dbd);
-  background-image: url("./images/network.jpg");
-  background-position: center;
-  width: 100%;
-  height: 20rem;
-  background-size: cover;
-  margin-top: 5rem;
-}
-
-.news .who-taxt {
-  /*network photoの中の白文字*/
-  color: #fff;
-  text-shadow: black 2px 1px 3px;
-  -webkit-transform: translateY(-175px);
-          transform: translateY(-175px);
-  text-align: center;
-}
-
-.news .who p {
-  width: 80%;
-  margin: auto;
-  margin-top: 5rem;
-}
-
-.news .who p + p {
-  margin-top: 5rem;
-}
-
-.news .who__memmber {
-  /*memmbers12の写真*/
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  line-height: 0;
-  /*写真の下にできる余白を打ち消す*/
-  margin-top: 5rem;
-}
-
-.news .who__memmber div {
-  -ms-flex-preferred-size: calc(100%/6 - 2px);
-      flex-basis: calc(100%/6 - 2px);
-  min-width: calc(100%/6 - 2px);
-}
-
-.news .who__memmber div img {
-  width: 100%;
-  height: auto;
-  max-width: 20rem;
-  min-width: 7.7rem;
-}
-
-.news .who__memmber div:first-child {
-  /*makerzのロゴのみborder入れる*/
-  border: 1px solid #333;
-}
-
-
-
-/*============================================================
-access
-=============================================================*/
-.access {
-  position: relative;
-=======
 @import "style.css";
 
-:lang(ja) {
-  font-family: 'M PLUS 1p', sans-serif;
-  color: #3E3E3E;
-  font-size: 16px;
-}
-
-/*（英文）*/
-:lang(en){
-  font-family: 'Vollkorn', sans-serif;
-  color: #3E3E3E;
-  font-size: 18px;
-}
-  h1:lang(en){
-      font-size: 38px;
-      font-weight: bold;
-  }
-  h2:lang(en){
-      font-size: 26px;
-      font-weight: bold;
-  }
-  h3:lang(en){
-      font-size: 20px;
-      font-weight: bold;
-  }
 body * {
   width: device-width;
   box-sizing: border-box;
-
 }
 .site-header{
   padding: 1%;
@@ -202,40 +47,9 @@ body * {
   height: 800px;
   padding: 1%; 
   margin: 10px;
-
-
-
-.access iframe {
-  width: 100%;
-  height: 500px;
-  margin-top: 5rem;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-.access .access__wapper {
-  width: 23rem;
-  height: 25rem;
-  position: absolute;
-  top: 13%;
-  right: 5%;
-  background-color: #fff;
-  padding: 3rem;
-}
-.access .access__wapper h2 {
-  margin: 2rem;
-  text-align: center;
 }
 
 
-.access .access__wapper p:nth-of-type(2n) {
-  padding-bottom: 2rem;
-}
-
-
-}
-/*# sourceMappingURL=top.css.map */
-
-}
 .swiper-wrapper {
   width: 100%;
   margin: 0 auto;
@@ -358,8 +172,154 @@ h3{
   margin: 0;
   padding: 0;
 }
+/*============================================================
+news
+=============================================================*/
+/*h2の見出し*/
+.news h2::before, .news h2::after {
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+}
+
+.news h2::before {
+  left: 27%;
+}
+
+.news h2::after {
+  transform: scale(-1, 1);
+  right: 27%;
+}
+
+.news h2 {
+  text-align: center;
+  position: relative;
+}
+
+/*news一覧*/
+.news {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+.news__box {
+  border: solid 1px #333;
+  width: calc(100% / 3);
+  padding: 10px;
+  min-height: 8rem;
+}
+
+.news__box-wapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.news .who {
+  width: 100%;
+}
+
+.news .who__bg {
+  /*network photo*/
+  background: linear-gradient(#faf8f70a, #0d0d0dbd);
+  background-image: url("./images/network.jpg");
+  background-position: center;
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+  margin-top: 5rem;
+}
+
+.news .who-taxt {
+  /*network photoの中の白文字*/
+  color: #fff;
+  text-shadow: black 2px 1px 3px;
+  transform: translateY(-175px);
+  text-align: center;
+}
+
+.news .who p {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.news .who p + p {
+  margin-top: 5rem;
+}
+
+.news .who__memmber {
+  /*memmbers12の写真*/
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 0;
+  /*写真の下にできる余白を打ち消す*/
+  margin-top: 5rem;
+}
+
+.news .who__memmber div {
+  flex-basis: calc(100%/6 - 2px);
+  min-width: calc(100%/6 - 2px);
+}
+
+.news .who__memmber div img {
+  width: 100%;
+  height: auto;
+  max-width: 20rem;
+  min-width: 7.7rem;
+}
+
+.news .who__memmber div:first-child {
+  /*makerzのロゴのみborder入れる*/
+  border: 1px solid #333;
+}
 
 
- 
+
+/*============================================================
+access
+=============================================================*/
+.access {
+  position: relative;
+}
+.access iframe {
+  width: 100%;
+  height: 500px;
+  margin-top: 5rem;
+  filter: grayscale(100%);
+}
+.access .access__wapper {
+  width: 23rem;
+  height: 25rem;
+  position: absolute;
+  top: 13%;
+  right: 5%;
+  background-color: #fff;
+  padding: 3rem;
+}
+.access .access__wapper h2 {
+  margin: 2rem;
+  text-align: center;
+}
+
+
+.access .access__wapper p:nth-of-type(2n) {
+  padding-bottom: 2rem;
+}
+
+
+
+/*# sourceMappingURL=top.css.map */
+
+
+
+
 
 
