@@ -32,8 +32,9 @@
         font-size: 20px;
         font-weight: bold;
     }
+    /baumkuchen-aki-teams
 
-    /*remで指定する時もpx指定する時と同じ感覚で書ける用*/
+    /*remで指定する時もpx指定する時と同じ感覚で書ける用
     html {
         font-size: 62.5%;
-    }
+    }*/

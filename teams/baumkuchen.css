@@ -114,26 +114,33 @@ body * {
   justify-content: center;
 }
 
+.news h2::before, h2::after{
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+  }
+
+ .news h2::before{
+    left: 27%;
+  }
+ .news h2::after {
+    transform: scale(-1, 1);
+    right: 27%;
+  }
+ .news h2 {
+    text-align: center;
+    position: relative;
+  }
 .baum-box {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+
 }
-h2::before {
-  font-family:'Font Awesome 5 Free';
-  content: "\f100";
-  font-weight: 900;
-}
-h2::after {
-  font-family:'Font Awesome 5 Free';
-  content: "\f101";
-  font-weight: 900;
-}
-
-
-
-
 
 
 .baum_ul{
@@ -142,15 +149,14 @@ h2::after {
   padding-bottom: 30px;
   margin: 0 auto;
 }
-.kai-list .baum_ul .main-li {
-  margin-top: 10px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-.kai-list .baum_ul .main-li {
-  list-style-type: none;
+p {
   text-align: center;
 }
+
+.kai-list {
+  margin-top: 40px;
+}
+
 /* ========================================
     main終
 ========================================= */
@@ -268,7 +274,7 @@ font-size: 20px;
     レスポンシブ
 ========================================= */
 
-@media(max-width: 600px) {
+@media(max-width: 770px) {
 .baum_ul{
   width: 90%;
 }
