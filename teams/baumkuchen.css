@@ -1,3 +1,4 @@
+
 @import "../style.css";
 
 /* ========================================
@@ -279,3 +280,95 @@ font-size: 20px;
   width: 90%;
 }
 }
+
+
+@import "../style.css";
+
+
+
+h2{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+
+.baum-left-img {
+ padding-left:12%;
+ width:440px ;
+ height: 440px;
+
+}
+.baum-right-img{
+  padding-right:12% ;
+  width:440px ;
+ height: 440px;
+}
+.baum-aki{
+  display: flex;
+}
+.baum-niji{
+  display: flex;
+  
+}
+
+
+.baum-kai{
+  display: flex;
+  
+}
+.baum-pessi{
+  display: flex;
+  
+}
+
+.pe-list{
+  text-align: right;
+}
+ul{
+  margin-top: 16px;
+  padding-left: 10px;
+  
+}
+
+li{
+  list-style: none;
+}
+
+/* ここからreference*/
+
+.ref-contents{
+  display: flex;
+  
+}
+.ref-item{
+  border: solid;
+  border-width: thin;
+  height: 200px;
+}
+.ref-item img{
+  
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    
+}
+
+
+.ref-button h3{
+  border: solid;
+  border-width: thin;
+
+  width: 200px;
+  height: 35px;
+  padding-top: 10px;
+  margin-top: 200px;
+  
+}
+
+.ref-button{
+  text-align: -webkit-center;
+}
+
