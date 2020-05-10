@@ -279,6 +279,7 @@ font-size: 20px;
 .baum_ul{
   width: 90%;
 }
+
 }
 
 
@@ -288,6 +289,7 @@ font-size: 20px;
 
 h2{
   text-align: center;
+  
 }
 h3{
   text-align: center;
@@ -295,14 +297,15 @@ h3{
 
 .baum-left-img {
  padding-left:12%;
- width:440px ;
+ width:440px;
  height: 440px;
 
+ 
 }
 .baum-right-img{
   padding-right:12% ;
   width:440px ;
- height: 440px;
+  height:440px;
 }
 .baum-aki{
   display: flex;
