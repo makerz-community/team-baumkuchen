@@ -161,35 +161,18 @@ p {
 /* ========================================
     main終
 ========================================= */
-
-
-
-
-
-
-/* ========================================
-    レスポンシブ
-========================================= */
-
-@media(max-width: 770px) {
-.baum_ul{
-  width: 90%;
-}
-
-}
-
-
-@import "../style.css";
-
+/* ========================================
+    member
+========================================= */
 
 
 h2{
   text-align: center;
+  margin: 3em;
+}
   
-}
-h3{
-  text-align: center;
-}
+
+
 
 .baum-left-img {
  padding-left:12%;
@@ -238,12 +221,13 @@ li{
 
 .ref-contents{
   display: flex;
-  
+  width: 100%;
+  height: auto;
 }
 .ref-item{
   border: solid;
   border-width: thin;
-  height: 200px;
+  height: auto;
 }
 .ref-item img{
   
@@ -270,4 +254,29 @@ li{
 .ref-button{
   text-align: -webkit-center;
 }
+
+
+
+
+/* ========================================
+    レスポンシブ
+========================================= */
+
+@media(max-width: 770px) {
+.baum_ul{
+  width: 90%;
+
+}
+.ref-contents{
+  padding: 10%;
+  display: table-column;
+  width: 100%;
+  height: auto;
+}
+}
+
+
+@import "../style.css";
+
+
 
