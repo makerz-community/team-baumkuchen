@@ -205,7 +205,7 @@ h2{
 }
 
 .pe-list{
-  text-align: right;
+  line-height: 2em;
 }
 ul{
   margin-top: 16px;
@@ -273,6 +273,16 @@ li{
   width: 100%;
   height: auto;
 }
+.baum-aki,.baum-kai{
+  flex-direction: column;
+}
+.baum-niji,.baum-pessi{
+  flex-direction: column-reverse;
+}
+.baum-right-img,.baum-left-img{
+  padding: 12%;
+  width: auto;
+height: auto;}
 }
 
 
