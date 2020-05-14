@@ -7,182 +7,312 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap");
 /*(和文)*/
 :lang(ja) {
-  font-family: "M PLUS 1p", sans-serif;
-  color: #3e3e3e;
-  font-size: 16px;
+	font-family: "M PLUS 1p", sans-serif, "Font Awesome 5 Brands";
+	color: #3e3e3e;
+	font-size: 16px;
 }
 
 /*（英文）*/
 :lang(en) {
-  font-family: "Vollkorn", sans-serif;
-  color: #3e3e3e;
-  font-size: 18px;
+	font-family: "Vollkorn", sans-serif;
+	color: #3e3e3e;
+	font-size: 18px;
 }
 h1:lang(en) {
-  font-size: 38px;
-  font-weight: bold;
+	font-size: 38px;
+	font-weight: bold;
 }
 h2:lang(en) {
-  font-size: 26px;
-  font-weight: bold;
+	font-size: 26px;
+	font-weight: bold;
 }
 h3:lang(en) {
-  font-size: 20px;
-  font-weight: bold;
+	font-size: 20px;
+	font-weight: bold;
 }
-
 /*remで指定する時もpx指定する時と同じ感覚で書ける用
     html {
         font-size: 62.5%;
     }*/
-
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
 /*==========================================
 header
 ===========================================*/
+/*header大枠*/
 .site-header {
-  padding: 1%;
-  background: #ffffff;
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
-  width: 100%;
-  height: 7em;
-  z-index: 999;
-  top: 0px;
-  left: 0px;
+	background: #ffffff;
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	width: 100%;
+	height: 7em;
+	z-index: 999;
+	top: 0px;
+	left: 0px;
+	align-items: center;
 }
+/*ロゴ
+---------------------------------------*/
 .baumkuchen-aki-logo {
-  margin: 0px;
+	margin-left: 1rem;
 }
+.baumkuchen-aki-logo img {
+	width: 7rem;
+	height: 7rem;
+	vertical-align: bottom;
+}
+/*header内アイコン
+---------------------------------------*/
 .baumkuchen-aki-icon {
-  display: flex;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	height: 7rem;
 }
 .baumkuchen-aki-icon-item {
-  margin-left: 30px;
-  line-height: 30px;
-  vertical-align: middle;
+	display: block;
 }
-.baumkuchen-aki-icon :nth-child(1) {
-  list-style-image: url(./images/icon-home.svg);
+.baumkuchen-aki-icon li:nth-child(1) {
+	background: url("./images/icon-home.svg") no-repeat center;
+	background-size: 45px;
 }
-.baumkuchen-aki-icon :nth-child(2) {
-  list-style-image: url(./images/icon-tag.svg);
+.baumkuchen-aki-icon li:nth-child(2) {
+	background: url("./images/icon-tag.svg") no-repeat center;
+	background-size: 45px;
 }
-.baumkuchen-aki-icon :nth-child(3) {
-  list-style-image: url(./images/icon-viewmodule.svg);
+.baumkuchen-aki-icon li:nth-child(3) {
+	background: url("./images/icon-viewmodule.svg") no-repeat center;
+	background-size: 45px;
 }
-.baumkuchen-aki-icon :nth-child(4) {
-  list-style-image: url(./images/icon-reorder.svg);
+.baumkuchen-aki-icon li:nth-child(4) {
+	background: url("./images/icon-star.svg") no-repeat center;
+	background-size: 45px;
+}
+.menu-btn {
+	background: url("./images/icon-reorder.svg") no-repeat center;
+	background-size: 45px;
+}
+.menu-btn-after {
+	background: url("./images/times-circle-regular.svg") no-repeat center;
+	background-size: 45px;
+}
+.gnav {
+	height: 7rem;
+}
+.gnav ul li,
+.gnav ul li a,
+.c-button {
+	display: block;
+	width: 6rem;
+	height: 7rem;
+}
+/*アイコン下の文字
+---------------------------------------*/
+.c-button span {
+	color: #fff;
+	margin: 0 0 3rem 0;
+	height: 7rem;
+}
+.gnav ul li a span {
+	visibility: hidden;
+	display: block;
+	line-height: 7rem;
+}
+.gnav ul li:nth-child(1) a:hover span,
+.gnav ul li:nth-child(2) a:hover span,
+.gnav ul li:nth-child(3) a:hover span,
+.gnav ul li:nth-child(4):hover span {
+	visibility: visible;
+	text-align: center;
+	padding: 2rem 0 0;
+}
+.c-button span:hover {
+	margin: 0;
+	padding: 5rem 0 0 0;
+	color: #3e3e3e;
+}
+
+/*drawer
+---------------------------------------*/
+.noscroll {
+	overflow: hidden;
+}
+/* a {
+	color: #fff;
+} */
+.nav-list {
+	display: flex;
+}
+.nav-item {
+	margin-right: 55px;
+}
+.nav-wrapper {
+	display: none;
+	width: 100vw;
+	height: 93vh;
+	position: fixed;
+	top: 7rem;
+	left: 0;
+}
+/*メニューリンク画面*/
+.header-nav {
+	width: 100%;
+	height: 100%;
+	background-color: #1b1310;
+}
+/*メニューリンクを縦横中央に集める*/
+.header-nav .nav-list {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.header-nav .nav-item {
+	margin-right: 0;
+	margin-bottom: 40px;
+}
+/*a要素を広げ、文字を中央揃え*/
+.nav-list .nav-item a {
+	color: #fff;
+	width: 16rem;
+	height: 5rem;
+	display: block;
+	line-height: 5rem;
 }
 
 /* ========================================
 footer
 ========================================= */
-
-body,
-#wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 30vh;
-}
-
 footer {
-  margin-top: auto;
+	margin-top: 10rem;
+	background-color: black;
 }
-
-.flexbox-container {
-  margin-top: 20px;
-  display: flex;
-  background-color: black;
-  height: 80px;
+.snsbtniti li:nth-of-type(1) a img {
+	width: 100px;
+	height: 100px;
 }
-
 .flexbox-container2 {
-  display: flex;
-  text-align: center;
-  height: 45px;
-  margin: auto;
+	height: 8rem;
+	line-height: 10rem;
+	margin: auto;
+	position: relative;
 }
-
 /* ボタン全体 */
 .flowbtn7 {
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  text-decoration: none;
-  transition: 0.5s;
+	border-radius: 50%;
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5s;
 }
 /* アイコンをど真ん中に*/
 .flowbtn7 i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 30px;
 }
 /* ulタグの内側余白を０にする */
 ul.snsbtniti {
-  padding: 0 !important;
+	padding: 0 !important;
 }
 /* ボタン全体の位置 */
 .snsbtniti {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
 /* ボタン同士の余白 */
 .snsbtniti li {
-  flex: 0 20px 20px;
-  text-align: center !important;
-  margin-left: 10px;
+	width: 10rem;
+	height: 7rem;
+	text-align: center;
+}
+.snsbtniti li:nth-child(1) {
+	margin-top: 1rem;
 }
 /* ボタンにマウスを乗せた時 */
 .flowbtn7:hover {
-  -webkit-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  transform: translateY(-5px);
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 /* Twitter */
 .fl_tw7 {
-  background: linear-gradient(135deg, #13f1fc 0%, #0470dc 100%);
+	background: linear-gradient(135deg, #13f1fc 0%, #0470dc 100%);
 }
 /* Instagramアイコン位置 */
 .insta_btn7 .fa-instagram {
-  font-size: 35px;
+	font-size: 35px;
 }
 /* Instagram紫グラデ背景 */
 .insta_btn7 {
-  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
-  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
-  overflow: hidden;
+	background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+	background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+	overflow: hidden;
 }
 /* Instagramオレンジグラデ背景 */
 .insta_btn7:before {
-  content: "";
-  position: absolute;
-  top: 27px;
-  left: -12px;
-  width: 59px;
-  height: 40px;
-  background: -webkit-radial-gradient(
-    #ffdb2c 10%,
-    rgba(255, 105, 34, 0.65) 55%,
-    rgba(255, 88, 96, 0) 70%
-  );
-  background: radial-gradient(
-    #ffdb2c 5%,
-    rgba(255, 105, 34, 0.65) 55%,
-    rgba(255, 88, 96, 0) 70%
-  );
+	content: "";
+	position: absolute;
+	top: 27px;
+	left: -12px;
+	width: 59px;
+	height: 40px;
+	background: -webkit-radial-gradient(
+		#ffdb2c 10%,
+		rgba(255, 105, 34, 0.65) 55%,
+		rgba(255, 88, 96, 0) 70%
+	);
+	background: radial-gradient(
+		#ffdb2c 5%,
+		rgba(255, 105, 34, 0.65) 55%,
+		rgba(255, 88, 96, 0) 70%
+	);
 }
 /* Facebook */
 .fl_fb7 {
-  background: linear-gradient(135deg, #6699ff 0%, #3b5998 100%);
-  font-size: 20px;
+	background: linear-gradient(135deg, #6699ff 0%, #3b5998 100%);
+	font-size: 20px;
+}
+/*footer リンク中央集め*/
+.footer_nav ul {
+	display: flex;
+	justify-content: center;
+}
+/*footer リンク文字設定*/
+.footer_nav ul li a {
+	color: #fff;
+	font-size: 23px;
+}
+/*コピーライト*/
+.copy_right {
+	color: #fff;
+	display: block;
+	text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+	/*drawerのmenu以外のアイコン非表示*/
+	.baumkuchen-aki-icon li:nth-child(1),
+	.baumkuchen-aki-icon li:nth-child(2),
+	.baumkuchen-aki-icon li:nth-child(3),
+	.baumkuchen-aki-icon li:nth-child(4) {
+		display: none;
+	}
 }
