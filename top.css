@@ -6,7 +6,6 @@ body * {
   box-sizing: border-box;
 
 }
-
 /* 全体のスタイル */
 .swiper-container {
   width:100%;
@@ -14,7 +13,6 @@ body * {
   padding: 1%; 
   margin: 10px;
 }
-
 .swiper-wrapper {
   width: 100%;
   margin: 0 auto;
@@ -28,7 +26,7 @@ body * {
 }
 /* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
 .swiper-slide:nth-child(4n+1) {
-  background-image: url("./images/top.jpeg");
+  background-image: url("./images/computer.jpg");
   background-repeat:no-repeat;
   width: 100%;
   height: 800px;
@@ -36,7 +34,7 @@ body * {
 }
 /* 4の倍数＋2枚目のスライドのスタイル（2枚目、6枚目…） */
 .swiper-slide:nth-child(4n+2) {
-  background-image: url("./images/lovemusic.jpeg");
+  background-image: url("./images/create.jpg");
   background-repeat:no-repeat;
   width: 100%;
   height: 800px;
@@ -44,7 +42,7 @@ body * {
 }
 /* 4の倍数＋3枚目のスライドのスタイル（3枚目、7枚目…） */
 .swiper-slide:nth-child(4n+3) {
-  background-image: url("./images/climbing.jpeg");
+  background-image: url("./images/chalkboard.jpg");
   background-repeat:no-repeat;
   width: 100%;
   height: 800px;
@@ -52,7 +50,7 @@ body * {
 }
 /* 4の倍数＋4枚目のスライドのスタイル（4枚目、8枚目…） */
 .swiper-slide:nth-child(4n+4) {
-  background-image: url("./images/mint.jpeg");
+  background-image: url("./images/whitesmartphone.jpg");
   background-repeat:no-repeat;
   width: 100%;
   height: 800px;
@@ -80,10 +78,7 @@ body * {
   justify-content: space-around;
   padding: 1%;
 }  
-h2{
-  text-align: center;
-  margin-bottom: 8%;
-}
+
 .cgevent{
   font-size: x-small;
   margin-left: 30%;
@@ -141,29 +136,6 @@ h3{
 /*============================================================
 news
 =============================================================*/
-/*h2の見出し*/
-.news h2::before, .news h2::after {
-  content: "\f0da";
-  font-family: "Font Awesome 5 Free";
-  font-size: 2rem;
-  font-weight: 900;
-  position: absolute;
-  top: 0;
-}
-
-.news h2::before {
-  left: 27%;
-}
-
-.news h2::after {
-  transform: scale(-1, 1);
-  right: 27%;
-}
-
-.news h2 {
-  text-align: center;
-  position: relative;
-}
 
 /*news一覧*/
 .news {
@@ -193,7 +165,7 @@ news
 .news .who__bg {
   /*network photo*/
   background: linear-gradient(#faf8f70a, #0d0d0dbd);
-  background-image: url("./images/network.jpg");
+  background-image: url("./images/member.jpg");
   background-position: center;
   width: 100%;
   height: 20rem;
