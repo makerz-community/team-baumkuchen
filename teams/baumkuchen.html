@@ -2,49 +2,89 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="../teams/baumkuchen.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <title>Document</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<link rel="stylesheet" href="../teams/baumkuchen.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
-  <!--header-->
-  <header class="site-header">
-    <h1 class="baumkuchen-aki-logo"><img src="./images/makerzlogo.png" alt="makerz"></h1>
-    <nav class="gnav">
-        <ul class="baumkuchen-aki-icon">
-            <li class="baumkuchen-aki-icon-item"></li>
-            <li class="baumkuchen-aki-icon-item"></li>
-            <li class="baumkuchen-aki-icon-item"></li>
-            <li class="baumkuchen-aki-icon-item"></li>
-        </ul>
-    </nav>
-    </header>
-  <!--header-->
+	<!--header-->
+	<header class="site-header">
+		<h1 class="baumkuchen-aki-logo">
+			<img src="./images/makerzlogo.png" alt="makerz" />
+		</h1>
+		<!--nav for pc(771以上)-->
+		<nav class="gnav">
+			<ul class="baumkuchen-aki-icon" lang="en">
+				<li class="baumkuchen-aki-icon-item">
+					<a href="/team-baumkuchen/top.html"><span>HOME</span></a>
+				</li>
+				<li class="baumkuchen-aki-icon-item">
+					<a href="#"><span>AZUKI</span></a>
+				</li>
+				<li class="baumkuchen-aki-icon-item">
+					<a href="/team-baumkuchen/teams/baumkuchen.html"
+						><span>BAUMKUCHEN</span></a
+					>
+				</li>
+				<li class="baumkuchen-aki-icon-item">
+					<a href="#"><span>COOKIE</span></a>
+				</li>
+				<li class="menu-btn">
+					<button type="button" class="c-button">
+						<span class="baumkuchen-aki-icon-item hover-menu">
+							MENU
+						</span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+		<!--//nav for pc(771以上)-->
 
-
-  <!--main-->
-  <div class="baum-main">
-    <img src="../teams/images/bc.jpg" alt="メイン画像">
-  </div>
-  <section class="news" id="news">
-    <h2 lang="en">ACTIVTY</h2>
-    </div>
-
-    <div class="kai-list">
-      <ul class="baum_ul">
-        <li class="banm_li">
-          <p>2020/4/5 <span>TwitterでのコミュニティTeam</span></p>
-          <p>2020/4/15 <span>共同製作にて初のHP作成。</span></p>
-        </li>
-      </ul>
-    </div>
-  </section>  
+		<!--nav for sp(with:770以下)-->
+		<div class="nav-wrapper sp-header">
+			<nav class="header-nav" id="header-nav">
+				<ul class="nav-list" lang="en">
+					<li class="nav-item">
+						<a href="/team-baumkuchen/top.html">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">AZUKI</a>
+					</li>
+					<li class="nav-item">
+						<a href="/team-baumkuchen/teams/baumkuchen.html">BAUMKUCHEN</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">COOKIE</a>
+					</li>
+				</ul>
+			</nav>
+		</div><!--//nav-wrapper sp-header-->
+		<!--//nav for sp(with:770以下)-->
+	</header>
+	<!-- <//header> -->
+<!--main-->
+	<div class="baum-main">
+		<img src="../teams/images/bc.jpg" alt="メイン画像">
+	  </div>
+	  <section class="news" id="news">
+			<h2 lang="en">ACTIVTY</h2>
+			</div>
+		
+			<div class="kai-list">
+			<ul class="baum_ul">
+				<li class="banm_li">
+				<p>2020/4/5 <span>TwitterでのコミュニティTeam</span></p>
+				<p>2020/4/15 <span>共同製作にて初のHP作成。</span></p>
+				</li>
+			</ul>
+			</div>
+	  </section>
     <!--main-->
 
     <!-- member -->
@@ -82,7 +122,7 @@
                 <li>Name: kai</li>
                 <li>sns: <a href="https://twitter.com/coelacanth0525">twitter</a></li>
                 <li>portfolio: In production</li>
-                <li>profile: ミスチル好きの旅人。『どうせダメならやってみよう』精神。サーフィンをする男性海の近くに行きたい→移住計画中🏝ブログバツ印プログラミングパソコン勉強中！簿記＆宅建も習得目指し中！HTML/CSS→Bootstrap→JavaScript 習得中</li>
+                <li>profile: ミスチル好きの旅人。『どうせダメならやってみよう』精神。サーフィンをする男性。海の近くに行きたい→移住計画中🏝ブログバツ印プログラミングパソコン勉強中！簿記＆宅建も習得目指し中！HTML/CSS→Bootstrap→JavaScript 習得中</li>
               </ul>
               
             
@@ -125,40 +165,65 @@
        <h3 lang="en">ALL REFERENCES</h3>
      </div>
 
-      
-    <div id="wrapper"></div>
-    <p><a href="../top.html">HOME</a></p>
-    <footer>
-      <section class='flexbox-container'>
-        <section class='flexbox-container1'>
-          <h1 class="baumkuchen-aki-logo"><img src="./images/makerzlogo.png" alt="makerz"></h1>
-        </section>
+	 <div id="wrapper"></div>
+	 <p><a href="../top.html">HOME</a></p>				 
+			
+						
+		 
+		<!--footer-->
+		<footer>
+			<div class="flexbox-container2">
+				<ul class="snsbtniti">
+					<li>
+						<a href="#"><img src="./images/makerzlogo.png" alt="makerz" /></a>
+					</li>
+					<li>
+						<a href="TwitterのプロフィールURL" class="flowbtn7 fl_tw7"
+							><i class="fab fa-twitter"></i
+						></a>
+					</li>
+					<li>
+						<a href="インスタのプロフィールURL" class="flowbtn7 insta_btn7"
+							><i class="fab fa-instagram"></i
+						></a>
+					</li>
+					<li>
+						<a href="FacebookページのURL" class="flowbtn7 fl_fb7"
+							><i class="fab fa-facebook-f"></i
+						></a>
+					</li>
+				</ul>
+			</div>
 
-        <section class='flexbox-container2'>
-          <ul class="snsbtniti">
-            <li><a href="TwitterのプロフィールURL" class="flowbtn7 fl_tw7"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="インスタのプロフィールURL" class="flowbtn7 insta_btn7"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="FacebookページのURL" class="flowbtn7 fl_fb7"><i class="fab fa-facebook-f"></i></a></li>
-          </ul>
-        </section>
-      </section>
-      
-    </footer>
-    <script>
-      $(function () {
-        $('a[href^="#"]').click(function () {
-          var speed = 500; //移動スピードの設定
-          var href = $(this).attr("href");
-          var target = $(href == "#" || href == "" ? 'html' : href);
-          var position = target.offset().top;
-          $("html, body").animate({ scrollTop: position }, speed, "swing");
-          return false;
-        });
-      });
-    </script>
+			<nav class="footer_nav">
+				<ul lang="en">
+					<li><a href="/team-baumkuchen/top.html
+						">|&nbsp;&nbsp;home&nbsp;&nbsp;</a></li>
+					<li><a href="#">|&nbsp;&nbsp;azuki&nbsp;&nbsp;</a></li>
+					<li>
+						<a href="/team-baumkuchen/teams/baumkuchen.html"
+							>|&nbsp;&nbsp;baumkuchen&nbsp;&nbsp;</a
+						>
+					</li>
+					<li><a href="#">|&nbsp;&nbsp;cookie&nbsp;&nbsp;|</a></li>
+				</ul>
+			</nav>
+			<small lang="en" class="copy_right">&copy; 2020 makerz</small>
+		</footer>
+		<!--//footer-->
+
+		<script src="/team-baumkuchen/common.js"></script>
+		<script>
+			$(function () {
+				$('a[href^="#"]').click(function () {
+					var speed = 500; //移動スピードの設定
+					var href = $(this).attr("href");
+					var target = $(href == "#" || href == "" ? 'html' : href);
+					var position = target.offset().top;
+					$("html, body").animate({ scrollTop: position }, speed, "swing");
+					return false;
+				});
+			});
+		</script>
 </body>
-
-  
-
-  
 </html>
