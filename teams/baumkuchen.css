@@ -492,7 +492,31 @@ li {
     max-width: 100%;
     max-height: 100%;
     margin: auto;
+<<<<<<< HEAD
   }
+=======
+    
+}
+
+.ref-button h3 {
+	border: solid;
+	border-width: thin;
+
+	width: 200px;
+	height: 35px;
+  padding: 5px;
+	margin-top: 200px;
+}
+
+.ref-button {
+  text-align: -webkit-center;
+  
+}
+
+
+/* レスポンシブーーーーーーーーーーーーーー */
+
+>>>>>>> cccf60dd9ac8af9b8d7e0c19afbd8d4f278440d9
 
   .ref-button h3 {
     border: solid;
