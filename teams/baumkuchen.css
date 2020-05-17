@@ -433,7 +433,7 @@ span {
 }
 
 .baum-mem-list {
-  width: 1000px;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -473,99 +473,104 @@ ul {
 
 li {
   list-style: none;
+}
+/* ここからreference*/
 
-  /* ここからreference*/
-
- .ref-contents {
-    display: flex;
-    width: 100%;
-    height: auto;
-  }
-  .ref-item {
-    border: solid;
-    border-width: thin;
-    height: auto;
-  }
-  .ref-item img {
-    height: auto;
-    width: auto;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-<<<<<<< HEAD
-  }
-=======
-    
+.ref-contents {
+  display: flex;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+.ref-item {
+  border: solid;
+  border-width: thin;
+  height: auto;
+}
+.ref-item img {
+  /* height: auto; */
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
 }
 
 .ref-button h3 {
-	border: solid;
-	border-width: thin;
-
-	width: 200px;
-	height: 35px;
+  border: solid;
+  border-width: thin;
+  text-align: center;
   padding: 5px;
-	margin-top: 200px;
+  width: 200px;
+  height: 35px;
+  margin-top: 100px;
 }
 
 .ref-button {
-  text-align: -webkit-center;
-  
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
-
 
 /* レスポンシブーーーーーーーーーーーーーー */
 
->>>>>>> cccf60dd9ac8af9b8d7e0c19afbd8d4f278440d9
-
-  .ref-button h3 {
-    border: solid;
-    border-width: thin;
-
-    width: 200px;
-    height: 35px;
-    padding-top: 10px;
-    margin-top: 200px;
+@media (max-width: 770px) {
+  .baum_ul {
+    width: 50%;
   }
-
-  .ref-button {
-    text-align: -webkit-center;
+  .ref-contents {
+    padding: 10%;
+    display: table-column;
+    width: 100%;
+    height: auto;
   }
-
-  /* レスポンシブーーーーーーーーーーーーーー */
-
-  /* @media (max-width: 770px) {
-    .baum_ul {
-      width: 50%;
-    }
-    .ref-contents {
-      padding: 10%;
-      display: table-column;
-      width: 100%;
-      height: auto;
-    }
 
  .baum-mem-list {
-      width: 100%;
-    }
+    width: 100%;
+}
 .baum-aki,
-  .baum-kai {
-    flex-direction: column;
-  }
- .baum-niji,
-  .baum-pessi {
-    flex-direction: column-reverse;
-  }
-  .baum-right-img,
-  .baum-left-img {
+.baum-kai {
+  flex-direction: column;
+}
+.baum-niji,
+.baum-pessi {
+  flex-direction: column-reverse;
+}
+.baum-right-img {
     padding: 5%;
     width: 350px;
-    height: 20em;
+    height: 350px;
     margin-top: 2em;
-  }
-} */
+}
+ .baum-left-img {
+  height: 350px;
+  width: 350px;
+}
 
-@media screen {max-width: 999px;
+.ref-item img {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  margin-bottom: 5px;
+}
+.ref-button h3 {
+  margin-top: 5px;
+}
+
+ @media (max-width: 1200px) {
+  .baum-left-img,
+  .baum-right-img {
+    width: 200px;
+    height: 300px;
+  }
+  .ref-item img {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  margin-bottom: 5px;
+}
+.ref-button h3 {
+  margin-top: 5px;
+}
 
 }
+
 @import "../style.css";
