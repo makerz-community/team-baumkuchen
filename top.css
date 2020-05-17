@@ -5,7 +5,6 @@ body * {
 	width: device-width;
 	box-sizing: border-box;
 }
-
 /* 全体のスタイル */
 .swiper-container {
 	width: 100%;
@@ -13,7 +12,6 @@ body * {
 	padding: 1%;
 	margin: 10px;
 }
-
 .swiper-wrapper {
 	width: 100%;
 	margin: 0 auto;
@@ -107,6 +105,7 @@ h2 {
 }
 h3 {
 	margin-bottom: 6%;
+
 }
 .baumkuchen-aki-title {
 	font-size: 0.8em;
@@ -139,6 +138,7 @@ h3 {
 /*============================================================
 news
 =============================================================*/
+
 /*h2の見出し
 -------------------------------------------------------------*/
 .news h2::before,
@@ -188,6 +188,7 @@ news
 /*network photo
 --------------------------------------------------------------*/
 .news .who__bg {
+  
 	background: linear-gradient(#faf8f70a, #0d0d0dbd);
 	background-image: url("./images/network.jpg");
 	background-position: center;
