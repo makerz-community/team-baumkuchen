@@ -234,7 +234,7 @@ ul.snsbtniti {
 /* ボタン全体の位置 */
 .snsbtniti {
 	display: flex;
-	flex-flow: row wrap;
+	
 	justify-content: center;
 }
 /* ボタン同士の余白 */
