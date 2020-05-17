@@ -4,7 +4,7 @@
 /* ========================================
     リセットcss
 ========================================= */
-
+/* 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -158,7 +158,7 @@ input,
 textarea {
 	margin: 0;
 	padding: 0;
-}
+} */
 ol,
 ul {
 	list-style: none;
@@ -262,28 +262,6 @@ body,
 	display: flex;
 	justify-content: center;
 }
-
-.news h2::before,
-h2::after {
-	content: "\f0da";
-	font-family: "Font Awesome 5 Free";
-	font-size: 2rem;
-	font-weight: 900;
-	position: absolute;
-	top: 0;
-}
-
-.news h2::before {
-	left: 27%;
-}
-.news h2::after {
-	transform: scale(-1, 1);
-	right: 27%;
-}
-.news h2 {
-	text-align: center;
-	position: relative;
-}
 .baum-box {
 	display: flex;
 	justify-content: center;
@@ -315,19 +293,12 @@ p {
 /* ========================================
     member*/
 
-
-h2{
-  text-align: center;
-  margin: 3em;
-}
   
 .baum-mem-list{
   width: 1000px;
   margin-right: auto;
   margin-left: auto;
 }
-
-
 .baum-left-img {
  padding-left:12%;
  max-width:440px;
