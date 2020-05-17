@@ -22,19 +22,14 @@
     width: 100%;
     height: auto;
   }
-  
-
 /* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
 .swiper-slide:nth-child(4n+1) {
     background-size: 100% auto; 
-
   }
   /* 4の倍数＋2枚目のスライドのスタイル（2枚目、6枚目…） */
-.swiper-slide:nth-child(4n+2) {
-    
+.swiper-slide:nth-child(4n+2) {  
     background-size: 100% auto; 
 }
-
   /* 4の倍数＋3枚目のスライドのスタイル（3枚目、7枚目…） */
   .swiper-slide:nth-child(4n+3) {
     background-size: 100% auto;  

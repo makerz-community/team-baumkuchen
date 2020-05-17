@@ -6,12 +6,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap");
 /*(和文)*/
+
 :lang(ja) {
 	font-family: "M PLUS 1p", sans-serif, "Font Awesome 5 Brands";
 	color: #3e3e3e;
 	font-size: 16px;
 }
-
 /*（英文）*/
 :lang(en) {
 	font-family: "Vollkorn", sans-serif;
@@ -19,12 +19,32 @@
 	font-size: 18px;
 }
 h1:lang(en) {
-	font-size: 38px;
-	font-weight: bold;
+
+  /* font-size: 38px; */
+  font-weight: bold;
 }
 h2:lang(en) {
-	font-size: 26px;
-	font-weight: bold;
+  font-size: 38px;
+  font-weight: bold;
+}
+h2::before, h2::after {
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+}
+h2::before {
+  left: 32%;
+}
+h2::after {
+  transform: scale(-1, 1);
+  right: 32%;
+}
+h2 {
+  text-align: center;
+  position: relative;
 }
 h3:lang(en) {
 	font-size: 20px;
