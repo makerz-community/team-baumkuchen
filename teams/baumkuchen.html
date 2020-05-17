@@ -49,12 +49,13 @@
 
 
 	</header>
-	<!-- <//header> -->
-<!--main-->
+		<!-- <//header> -->
+		<!--main-->
+	<main>
 	<div class="baum-main">
 		<img src="../teams/images/bc.jpg" alt="メイン画像">
-	  </div>
-	  <section class="news" id="news">
+	</div>
+		<section class="news" id="news">
 			<h2 lang="en">ACTIVTY</h2>
 			</div>
 
@@ -67,6 +68,7 @@
 			</ul>
 			</div>
 	  </section>
+	</main>
     <!--main-->
 
     <!-- member -->
@@ -151,43 +153,52 @@
 			<div class="flexbox-container2">
 				<ul class="snsbtniti">
 					<li>
-						<a href="#"><img src="../images/makerzlogo.png" alt="makerz" /></a>
+						<a href="#"><img src="../images/makerzlogo.png" alt="makerz"/></a>
 					</li>
 					<li>
-						<a href="TwitterのプロフィールURL" class="flowbtn7 fl_tw7"
-							><i class="fab fa-twitter"></i
-						></a>
+						<a href="TwitterのプロフィールURL" class="flowbtn7 fl_tw7"><i class="fab fa-twitter"></i></a>
 					</li>
 					<li>
-						<a href="インスタのプロフィールURL" class="flowbtn7 insta_btn7"
-							><i class="fab fa-instagram"></i
-						></a>
+						<a href="インスタのプロフィールURL" class="flowbtn7 insta_btn7"><i class="fab fa-instagram"></i></a>
 					</li>
 					<li>
-						<a href="FacebookページのURL" class="flowbtn7 fl_fb7"
-							><i class="fab fa-facebook-f"></i
-						></a>
+						<a href="FacebookページのURL" class="flowbtn7 fl_fb7"><i class="fab fa-facebook-f"></i></a>
 					</li>
 				</ul>
 			</div>
 
 			<nav class="footer_nav">
 				<ul lang="en">
-					<li><a href="../top.html
-						">|&nbsp;&nbsp;home&nbsp;&nbsp;</a></li>
-					<li><a href="#">|&nbsp;&nbsp;azuki&nbsp;&nbsp;</a></li>
 					<li>
-						<a href="/team-baumkuchen/teams/baumkuchen.html"
-							>|&nbsp;&nbsp;baumkuchen&nbsp;&nbsp;</a
-						>
+						<a href="../top.html">|&nbsp;&nbsp;home&nbsp;&nbsp;</a>
 					</li>
-					<li><a href="#">|&nbsp;&nbsp;cookie&nbsp;&nbsp;|</a></li>
+					<li>
+						<a href="#">|&nbsp;&nbsp;azuki&nbsp;&nbsp;</a></li>
+					<li>
+						<a href="/team-baumkuchen/teams/baumkuchen.html">|&nbsp;&nbsp;baumkuchen&nbsp;&nbsp;</a>
+					</li>
+					<li>
+						<a href="#">|&nbsp;&nbsp;cookie&nbsp;&nbsp;|</a>
+					</li>
 				</ul>
 			</nav>
 			<small lang="en" class="copy_right">&copy; 2020 makerz</small>
 		</footer>
 		<!--//footer-->
 
+		<!-- <script src="/team-baumkuchen/common.js"></script>
+		<script>
+			$(function () {
+				$('a[href^="#"]').click(function () {
+					var speed = 500; //移動スピードの設定
+					var href = $(this).attr("href");
+					var target = $(href == "#" || href == "" ? 'html' : href);
+					var position = target.offset().top;
+					$("html, body").animate({ scrollTop: position }, speed, "swing");
+					return false;
+				});
+			});
+		</script> -->
 		<script src="/team-baumkuchen/common.js"></script>
 
 </body>
