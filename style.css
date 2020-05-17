@@ -19,18 +19,24 @@
 	font-size: 18px;
 }
 h1:lang(en) {
-
-  /* font-size: 38px; */
-  font-weight: bold;
+	font-size: 38px;
+	font-weight: bold;
 }
 h2:lang(en) {
-  font-size: 38px;
-  font-weight: bold;
+	font-size: 38px;
+	font-weight: bold;
 }
-h2::before, h2::after {
+h2 {
+	text-align: center;
+	margin-bottom: 8%;
+	margin: 0 auto 60px auto;
+	width: 360px;
+	background: url(./images/arrow_32px_left.png) no-repeat left 35%, url(./images/arrow_32px_right.png) no-repeat right 35%;
+}
+/* h2::before, h2::after {
   content: "\f0da";
-  font-family: "Font Awesome 5 Free";
-  font-size: 2rem;
+  font-family: "Font Awesome 5 Free"; */
+  /* font-size: 2rem;
   font-weight: 900;
   position: absolute;
   top: 0;
@@ -41,11 +47,8 @@ h2::before {
 h2::after {
   transform: scale(-1, 1);
   right: 32%;
-}
-h2 {
-  text-align: center;
-  position: relative;
-}
+} */
+
 h3:lang(en) {
 	font-size: 20px;
 	font-weight: bold;
