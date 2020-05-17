@@ -1,0 +1,49 @@
+@media screen and (max-width:770px){
+    .baum_ul{
+        width: 90%;
+    
+      }
+      .ref-contents{
+        padding: 10%;
+        display: table-column;
+        width: 100%;
+        height: auto;
+      }
+    
+      .baum-mem-list{
+        width: 100%;
+      }
+      .baum-aki,.baum-kai{
+        flex-direction: column;
+      }
+      .baum-niji,.baum-pessi{
+        flex-direction: column-reverse;
+      }
+      .baum-right-img,.baum-left-img{
+        padding:5%;
+        width: auto;
+        max-width: 440px;
+      height: 20em;
+     margin-top: 2em;
+      }
+      /* <!--nav for sp(with:770以下)--> */
+		<div class="nav-wrapper sp-header">
+			<nav class="header-nav" id="header-nav">
+				<ul class="nav-list" lang="en">
+					<li class="nav-item">
+						<a href="/team-baumkuchen/top.html">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">AZUKI</a>
+					</li>
+					<li class="nav-item">
+						<a href="/team-baumkuchen/teams/baumkuchen.html">BAUMKUCHEN</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">COOKIE</a>
+					</li>
+				</ul>
+			</nav>
+		</div><!--//nav-wrapper sp-header-->
+		/* <!--//nav for sp(with:770以下)--> */
+}

@@ -397,12 +397,13 @@ li {
 
 	width: 200px;
 	height: 35px;
-	padding-top: 10px;
+  padding: 5px;
 	margin-top: 200px;
 }
 
 .ref-button {
-	text-align: -webkit-center;
+  text-align: -webkit-center;
+  
 }
 
 
