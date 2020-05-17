@@ -236,27 +236,7 @@ news
 	outline: 1px solid #333;
 }
 
-@media screen and (max-width: 770px) {
-	/*news一覧*/
-	.news__box-wapper {
-		display: block;
-	}
-	.news__box {
-		width: 100%;
-	}
-	/*network photoの中の白文字の▶◀*/
-	.news .who-taxt::before {
-		left: 10%;
-	}
-	.news .who-taxt::after {
-		right: 10%;
-	}
-	/*memmbers12の写真*/
-	.news .who__memmber div img {
-		max-width: 13rem;
-		min-width: 2.7rem;
-	}
-}
+
 
 /*============================================================
 access
@@ -287,8 +267,3 @@ access
 	padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 770px) {
-	.access__wapper {
-		display: none;
-	}
-}
