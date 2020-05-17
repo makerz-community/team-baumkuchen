@@ -49,7 +49,7 @@ body * {
 }
 /* 4の倍数＋4枚目のスライドのスタイル（4枚目、8枚目…） */
 .swiper-slide:nth-child(4n + 4) {
-	background-image: url("./images/whitesmartphone.jpeg");
+	background-image: url("./images/whitesmartphone.jpg");
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 800px;
