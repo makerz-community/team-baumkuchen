@@ -182,7 +182,7 @@ li {
   .ref-button h3 {
     margin-top: 5px;
   }
-
+}
   @media (max-width: 1200px) {
     .baum-left-img,
     .baum-right-img {
@@ -199,4 +199,4 @@ li {
       margin-top: 5px;
     }
   }
-}
+
