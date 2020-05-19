@@ -1,60 +1,202 @@
-
+@charset "UTF-8";
 @import "../style.css";
+/* ========================================
+   ?
+========================================= */
+/* micro clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+/* ========================================
+   ?
+========================================= */
 
+/* ========================================
+    main
+========================================= */
+body,
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+}
+.baum-main img {
+  width: 100%;
+  height: 800px;
+  margin-bottom: 30px;
+}
 
-
-
-h2{
+.baum-box {
+  margin: 16%;
+  height: 10em;
+  border: solid 2px #cccccc;
   text-align: center;
-}
-h3{
-  text-align: center;
+  font-size: 1em;
+  padding: 4%;
 }
 
-.baum-left-img {
- padding-left:12%;
- width:440px ;
- height: 440px;
-
-}
-.baum-right-img{
-  padding-right:12% ;
-  width:440px ;
- height: 440px;
-}
-.baum-aki{
+#wrapper {
   display: flex;
+  flex-direction: column;
+  min-height: 30vh;
 }
-.baum-niji{
+/* ========================================
+    main終
+========================================= */
+/* ========================================
+    menber
+========================================= */
+.baum-mem-logo {
+  margin-bottom: 40px;
+}
+.baum-mem-list {
+  width: 90%;
+  margin: 0 auto;
+}
+span {
+  font-weight: bold;
+}
+.twitter {
+  color: #2962ff;
+}
+.twitter:hover {
+  color: crimson;
+}
+.name {
+  font-size: 20px;
+}
+
+.baum-left-img,
+.baum-right-img {
+  width: 250px;
+  height: 250px;
+}
+.baum-aki,
+.baum-niji,
+.baum-kai,
+.baum-pessi {
   display: flex;
-  
+  margin-bottom: 100px;
 }
 
-
-.baum-kai{
-  display: flex;
-  
+.pe-list {
+  line-height: 2em;
 }
-.baum-pessi{
-  display: flex;
-  
-}
-
-.pe-list{
-  text-align: right;
-}
-ul{
-  margin-top: 16px;
-  padding-left: 10px;
-  
+/* ========================================
+    menber
+========================================= */
+/* なぞ？ */
+ul {
+  padding: 0 2em;
 }
 
-li{
+li {
   list-style: none;
 }
-
+/* なぞ？ */
 /* ここからreference*/
 
-.ref-contents{
+.ref-contents {
   display: flex;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+.ref-item {
+  border: solid;
+  border-width: thin;
+  height: auto;
+}
+.ref-item img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.ref-button h3 {
+  border: solid;
+  border-width: thin;
+  text-align: center;
+  padding: 5px;
+  width: 200px;
+  height: 35px;
+  margin-top: 100px;
+}
+
+.ref-button {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+/* レスポンシブーーーーーーーーーーーーーー */
+
+@media (max-width: 770px) {
+  .baum_ul {
+    width: 50%;
+  }
+  .ref-contents {
+    padding: 10%;
+    display: table-column;
+    width: 100%;
+    height: auto;
+  }
+
+  .baum-mem-list {
+    width: 100%;
+  }
+  .baum-aki,
+  .baum-kai {
+    flex-direction: column;
+  }
+  .baum-niji,
+  .baum-pessi {
+    flex-direction: column-reverse;
+  }
+  .baum-right-img {
+    padding: 5%;
+    width: 350px;
+    height: 350px;
+    margin-top: 2em;
+  }
+  .baum-left-img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .ref-item img {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    margin-bottom: 5px;
+  }
+  .ref-button h3 {
+    margin-top: 5px;
+  }
+
+  @media (max-width: 1200px) {
+    .baum-left-img,
+    .baum-right-img {
+      width: 200px;
+      height: 300px;
+    }
+    .ref-item img {
+      width: 50%;
+      height: 50%;
+      display: flex;
+      margin-bottom: 5px;
+    }
+    .ref-button h3 {
+      margin-top: 5px;
+    }
+  }
 }

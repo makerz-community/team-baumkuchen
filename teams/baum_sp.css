@@ -1,0 +1,29 @@
+@media screen and (max-width:770px){
+    .baum_ul{
+        width: 90%;
+    
+      }
+      .ref-contents{
+        padding: 10%;
+        display: table-column;
+        width: 100%;
+        height: auto;
+      }
+    
+      .baum-mem-list{
+        width: 100%;
+      }
+      .baum-aki,.baum-kai{
+        flex-direction: column;
+      }
+      .baum-niji,.baum-pessi{
+        flex-direction: column-reverse;
+      }
+      .baum-right-img,.baum-left-img{
+        padding:5%;
+        width: auto;
+        max-width: 440px;
+      height: 20em;
+     margin-top: 2em;
+      }
+}
