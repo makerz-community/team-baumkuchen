@@ -1,2 +1,19 @@
 @charset "UTF-8";
 @import "../style.css";
+
+body * {
+	width: device-width;
+	box-sizing: border-box;
+}
+
+
+.membersphoto{
+    width: 100%;
+    height: 800px;
+    padding: 1%;
+    margin: 10px;
+    /* background-image: url("../images/pessi.jpg"); */
+    
+ 
+       
+}
