@@ -33,7 +33,6 @@ main{
     border: solid 1px #838282;
     margin: 8px;
     padding: 1px 4px;
-    /* padding-left: 4px; */
     border-radius: 10px 10px 10px 10px;
 }
 .member_comment{
