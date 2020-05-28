@@ -1,19 +1,45 @@
 @charset "UTF-8";
-@import "../style.css";
+@import "../style.css"; */
 
 body * {
 	width: device-width;
 	box-sizing: border-box;
 }
-
-
-.membersphoto{
-    width: 100%;
-    height: 800px;
-    padding: 1%;
-    margin: 10px;
-    /* background-image: url("../images/pessi.jpg"); */
-    
- 
-       
+main{
+    margin: 0 auto;
+    padding: 40px;
+    padding-bottom: 60px;
 }
+.membersphoto{
+    padding-left: 40px;
+    display: inline-block;
+    width: 40em;
+    height: 30em;
+    line-height: 100px;
+}
+.member_detail_content{
+    display: inline-block; 
+    padding:  20px;     
+    height: 200px;
+    margin-top: 200px;
+    vertical-align: top;
+}
+
+.member_detail_skill{
+    display: flex;
+    padding: 10px;
+}
+.member_detail_skill_item{
+    border: solid 1px #838282;
+    margin: 8px;
+    padding: 1px 4px;
+    /* padding-left: 4px; */
+    border-radius: 10px 10px 10px 10px;
+}
+.member_comment{
+    border-top:solid 1px #838282;
+    padding: 40px;
+    margin: 10px;
+    
+}
+
