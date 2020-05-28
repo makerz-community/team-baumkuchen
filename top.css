@@ -1,10 +1,10 @@
 @charset "UTF-8";
 @import "./style.css";
 
-body * {
-	width: device-width;
-	box-sizing: border-box;
-}
+/* body * {
+	width: device-width; コレは効いていないようだけど絶対いる？ by虹
+	box-sizing: border-box;コレはressに記載があるのでかぶってる。
+} */
 /* 全体のスタイル */
 .swiper-container {
 	width: 100%;
@@ -17,47 +17,49 @@ body * {
 	margin: 0 auto;
 }
 /* 全スライド共通スタイル */
-.swiper-slide {
+/* .swiper-slide {
 	width: 100%;
 	height: auto;
 	text-align: center;
 	line-height: 800px;
-}
+} */
 /* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
 .swiper-slide:nth-child(4n + 1) {
 	background-image: url("./images/computer.jpg");
 	background-repeat: no-repeat;
-	width: 100%;
-	height: 800px;
+	/* width: 100%; */
+	/* height: 800px; */
 	background-size: cover;
 }
 /* 4の倍数＋2枚目のスライドのスタイル（2枚目、6枚目…） */
 .swiper-slide:nth-child(4n + 2) {
-	background-image: url("./images/create.jpg");
+	background: url("./images/create.jpg");
 	background-repeat: no-repeat;
-	width: 100%;
-	height: 800px;
+	/* width: 100%; */
+	/* height: 800px; */
 	background-size: cover;
+	background-position: center;
 }
 /* 4の倍数＋3枚目のスライドのスタイル（3枚目、7枚目…） */
 .swiper-slide:nth-child(4n + 3) {
 	background-image: url("./images/chalkboard.jpg");
 	background-repeat: no-repeat;
-	width: 100%;
-	height: 800px;
+	/* width: 100%; */
+	/* height: 800px; */
 	background-size: cover;
 }
 /* 4の倍数＋4枚目のスライドのスタイル（4枚目、8枚目…） */
 .swiper-slide:nth-child(4n + 4) {
 	background-image: url("./images/whitesmartphone.jpg");
 	background-repeat: no-repeat;
-	width: 100%;
-	height: 800px;
+	/* width: 100%; */
+	/* height: 800px; */
 	background-size: cover;
 }
 .baumkuchen-aki-main {
-	margin: 16%;
+	/* margin: 16%; */
 	text-align: center;
+	margin: 8rem auto 5rem;
 }
 .baumkuchen-aki-subtitle {
 	font-size: 2em;
@@ -127,10 +129,10 @@ h3 {
 	display: block;
 	text-align: center;
 }
-.baumkuchen-aki-team {
+/* .baumkuchen-aki-team {
 	margin: 0;
 	padding: 0;
-}
+} */
 /*============================================================
 news
 =============================================================*/
@@ -138,8 +140,6 @@ news
 /*news一覧
 -------------------------------------------------------------*/
 .news {
-	width: 90%;
-	margin: auto;
 	margin-bottom: 10rem;
 	position: relative;
 }
@@ -152,62 +152,111 @@ news
 .news__box-wapper {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 5rem;
-}
-.news .who {
-	width: 100%;
+	width: 90%;
+	margin: auto;
 }
 
 /*network photo
 --------------------------------------------------------------*/
-.news .who__bg {
+.who__bg {
 	background: linear-gradient(#faf8f70a, #0d0d0dbd);
 	background-image: url("./images/member.jpg");
 	background-position: center;
 	width: 100%;
 	height: 20rem;
 	background-size: cover;
-	margin-top: 5rem;
 }
 /*network photoの中の白文字*/
-.news .who-taxt {
+.who-taxt {
 	color: #fff;
 	text-shadow: black 2px 1px 3px;
 	transform: translateY(-175px);
 	text-align: center;
 }
-.news .who p {
+.who__text-wrapper {
+	margin: 5rem 0 10rem;
+}
+.who p {
 	width: 80%;
 	margin: auto;
+}
+.who p + p {
 	margin-top: 5rem;
 }
-.news .who p + p {
-	margin-top: 5rem;
-}
-/*memmbers12の写真*/
-.news .who__memmber {
+/*
+memmbers12の写真
+-----------------------------------------------------------------*/
+/*kiitoバージョン*/
+/* .who__memmber {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	line-height: 0; /*写真の下にできる余白を打ち消す*/
+	line-height: 0; */ /*写真の下にできる余白を打ち消す*/ /*
 	margin-top: 5rem;
-}
-.news .who__memmber div {
+}*/
+/*.who__memmber div {
 	flex-basis: calc(100% / 6 - 2px);
 	min-width: calc(100% / 6 - 2px);
 }
-.news .who__memmber div img {
+.who__memmber div img {
 	width: 100%;
 	height: auto;
 	max-width: 50rem;
 	min-width: 7.7rem;
-}
+}*/
 /*makerzのロゴのみoutline入れる*/
-.news .who__memmber div:first-child {
+/* .who__memmber div:first-child {
 	outline: 1px solid #333;
-}
+} */
 
+/*LIGバージョン*/
+.who__memmber {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	line-height: 0; /*写真の下にできる余白を打ち消す*/
+}
+.who__memmber div {
+	width: calc(100% / 4 - 3rem);
+	margin: 0 4rem 2rem 0;
+}
+.who__memmber > div:nth-of-type(4n) {
+	margin-right: 0;
+}
+.who__memmber div img {
+	width: 100%;
+	height: auto;
+	max-width: 50rem;
+	min-width: 7.7rem;
+	border-radius: 50%;
+}
+.who__memmber div a p {
+	text-align: center;
+	margin: 2rem auto;
+	max-width: 50rem;
+	min-width: 7.7rem;
+}
+.member_azuki {
+	border: 5px solid #e6867a;
+}
+.member_baumkuchen {
+	border: 5px solid #74acf4;
+}
+.member_cookie {
+	border: 5px solid #b4b4fc;
+}
+.who__memmber > div:nth-child(2n) > a > img {
+	border: 5px solid #333;
+}
+.who__memmber > div:nth-child(4n) > a > img {
+	border: inherit;
+}
+.shadow {
+	box-shadow: 7px 3px 20px #1d1b1b;
+}
 /*============================================================
 access
 =============================================================*/
