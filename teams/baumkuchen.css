@@ -1,23 +1,6 @@
 @charset "UTF-8";
 @import "../style.css";
-/* ========================================
-   ?
-========================================= */
-/* micro clearfix */
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
-}
-.cf:after {
-  clear: both;
-}
-.cf {
-  *zoom: 1;
-}
-/* ========================================
-   ?
-========================================= */
+
 
 /* ========================================
     main
@@ -52,7 +35,7 @@ body,
     main終
 ========================================= */
 /* ========================================
-    menber
+    member
 ========================================= */
 .baum-mem-logo {
   margin-bottom: 40px;
@@ -91,17 +74,17 @@ span {
   line-height: 2em;
 }
 /* ========================================
-    menber
+    member
 ========================================= */
-/* なぞ？ */
-ul {
+
+/* ul {
   padding: 0 2em;
-}
+} */
 
 li {
   list-style: none;
 }
-/* なぞ？ */
+
 /* ここからreference*/
 
 .ref-contents {
@@ -126,7 +109,7 @@ li {
 .ref-button h3 {
   border: solid;
   border-width: thin;
-  text-align: center;
+  /* text-align: center; */
   padding: 5px;
   width: 200px;
   height: 35px;
@@ -136,67 +119,5 @@ li {
 .ref-button {
   margin: 0 auto;
   margin-bottom: 50px;
+  
 }
-
-/* レスポンシブーーーーーーーーーーーーーー */
-
-@media (max-width: 770px) {
-  .baum_ul {
-    width: 50%;
-  }
-  .ref-contents {
-    padding: 10%;
-    display: table-column;
-    width: 100%;
-    height: auto;
-  }
-
-  .baum-mem-list {
-    width: 100%;
-  }
-  .baum-aki,
-  .baum-kai {
-    flex-direction: column;
-  }
-  .baum-niji,
-  .baum-pessi {
-    flex-direction: column-reverse;
-  }
-  .baum-right-img {
-    padding: 5%;
-    width: 350px;
-    height: 350px;
-    margin-top: 2em;
-  }
-  .baum-left-img {
-    height: 350px;
-    width: 350px;
-  }
-
-  .ref-item img {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    margin-bottom: 5px;
-  }
-  .ref-button h3 {
-    margin-top: 5px;
-  }
-}
-  @media (max-width: 1200px) {
-    .baum-left-img,
-    .baum-right-img {
-      width: 200px;
-      height: 300px;
-    }
-    .ref-item img {
-      width: 50%;
-      height: 50%;
-      display: flex;
-      margin-bottom: 5px;
-    }
-    .ref-button h3 {
-      margin-top: 5px;
-    }
-  }
-
