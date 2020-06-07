@@ -31,15 +31,13 @@
 	}
 	.member_detail_content {
 		margin-bottom: 2rem;
+		width: inherit;
 	}
 	.member_detail_content_wrapper img {
-		min-width: 300px;
+		/* min-width: 300px; */
 		width: 100%;
 	}
-	.member_detail_content_wrapper img {
-		width: inherit;
-	}
-	.member_detail_content {
-		width: inherit;
+	.member_detail_content img {
+		width: 50%;
 	}
 }
