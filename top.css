@@ -187,7 +187,7 @@ news
 memmbers12の写真
 -----------------------------------------------------------------*/
 /*kiitoバージョン*/
-/* .who__memmber {
+/* .who_member {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -195,23 +195,23 @@ memmbers12の写真
 	line-height: 0; */ /*写真の下にできる余白を打ち消す*/ /*
 	margin-top: 5rem;
 }*/
-/*.who__memmber div {
+/*.who_member div {
 	flex-basis: calc(100% / 6 - 2px);
 	min-width: calc(100% / 6 - 2px);
 }
-.who__memmber div img {
+.who_member div img {
 	width: 100%;
 	height: auto;
 	max-width: 50rem;
 	min-width: 7.7rem;
 }*/
 /*makerzのロゴのみoutline入れる*/
-/* .who__memmber div:first-child {
+/* .who_member div:first-child {
 	outline: 1px solid #333;
 } */
 
 /*LIGバージョン*/
-.who__memmber {
+.who_member {
 	width: 90%;
 	margin: auto;
 	display: flex;
@@ -219,21 +219,21 @@ memmbers12の写真
 	justify-content: left;
 	line-height: 0; /*写真の下にできる余白を打ち消す*/
 }
-.who__memmber div {
+.who_member div {
 	width: calc(100% / 4 - 3rem);
 	margin: 0 4rem 2rem 0;
 }
-.who__memmber > div:nth-of-type(4n) {
+.who_member > div:nth-of-type(4n) {
 	margin-right: 0;
 }
-.who__memmber div img {
+.who_member div img {
 	width: 100%;
 	height: auto;
 	max-width: 50rem;
 	min-width: 7.7rem;
 	border-radius: 50%;
 }
-.who__memmber div a p {
+.who_member div a p {
 	text-align: center;
 	margin: 2rem auto;
 	max-width: 50rem;
@@ -248,10 +248,10 @@ memmbers12の写真
 .member_cookie {
 	border: 5px solid #b4b4fc;
 }
-.who__memmber > div:nth-child(2n) > a > img {
+.who_member > div:nth-child(2n) > a > img {
 	border: 5px solid #333;
 }
-.who__memmber > div:nth-child(4n) > a > img {
+.who_member > div:nth-child(4n) > a > img {
 	border: inherit;
 }
 .shadow {
