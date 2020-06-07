@@ -1,31 +1,44 @@
 @charset "UTF-8";
-@import "../style.css"; */
-
-body * {
+@import "../style.css";
+/* body * {
 	width: device-width;
 	box-sizing: border-box;
+} */
+main {
+	text-align: center;
 }
-main{
-    text-align: center;
+.membersphoto {
+	padding: 2em;
+}
+.member_detail_skill {
+	display: flex;
+	/* padding: 10px; */
+	/*以下3行追加*/
+	margin: auto;
+	width: 5rem;
+	text-align: center;
+}
+.member_detail_skill_item {
+	border: solid 1px #838282;
+	margin: 8px 8px 0 0;
+	padding: 1px 4px;
+	border-radius: 10px 10px 10px 10px;
+}
+.member_comment {
+	border-top: solid 1px #838282;
+	padding: 40px;
+	margin: 10px;
+}
 
+/*ココから虹の記述*/
+.member_detail_content_wrapper {
+	display: flex;
+	padding-top: 5rem;
 }
-.membersphoto{
-    padding: 2em;
-
+.member_detail_content_wrapper img {
+	width: calc(100% / 2);
 }
-.member_detail_skill{
-    display: flex;
-    padding: 10px;
+.member_detail_content {
+	width: calc(100% / 2);
+	margin: auto;
 }
-.member_detail_skill_item{
-    border: solid 1px #838282;
-    margin: 8px;
-    padding: 1px 4px;
-    border-radius: 10px 10px 10px 10px;
-}
-.member_comment{
-    border-top:solid 1px #838282;
-    padding: 40px;
-    margin: 10px;  
-}
-
