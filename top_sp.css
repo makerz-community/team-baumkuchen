@@ -5,9 +5,7 @@
 	.swiper-container {
 		margin: 10px 10px;
 		width: 100%;
-		/* height: 24em; */
 		text-align: center;
-		/* line-height: 800px; */
 		height: inherit;
 	}
 	/* 全スライド共通スタイル */
@@ -39,13 +37,16 @@ news
 	}
 	.news__box {
 		width: 100%;
+		display: inherit;
 	}
-	/*memmbers12の写真  kiitoバージョン*/
-	/*.news .who__memmber div img {
-		max-width: 13rem;
-		min-width: 2.7rem;
-	}*/
-	/*memmbers12の写真  LIGバージョン*/
+	.news__box-published {
+		width: 100%;
+	}
+	.news__box:nth-child(1) time:after {
+		width: 100%;
+		position: inherit;
+	}
+	/*memmbers12の写真*/
 	.who__memmber div {
 		width: calc(100% / 2 - 2rem);
 		margin: 0 4rem 2rem 0;

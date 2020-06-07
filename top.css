@@ -1,10 +1,6 @@
 @charset "UTF-8";
 @import "./style.css";
 
-/* body * {
-	width: device-width; コレは効いていないようだけど絶対いる？ by虹
-	box-sizing: border-box;コレはressに記載があるのでかぶってる。
-} */
 /* 全体のスタイル */
 .swiper-container {
 	width: 100%;
@@ -16,27 +12,16 @@
 	width: 100%;
 	margin: 0 auto;
 }
-/* 全スライド共通スタイル */
-/* .swiper-slide {
-	width: 100%;
-	height: auto;
-	text-align: center;
-	line-height: 800px;
-} */
 /* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
 .swiper-slide:nth-child(4n + 1) {
 	background-image: url("./images/computer.jpg");
 	background-repeat: no-repeat;
-	/* width: 100%; */
-	/* height: 800px; */
 	background-size: cover;
 }
 /* 4の倍数＋2枚目のスライドのスタイル（2枚目、6枚目…） */
 .swiper-slide:nth-child(4n + 2) {
 	background: url("./images/create.jpg");
 	background-repeat: no-repeat;
-	/* width: 100%; */
-	/* height: 800px; */
 	background-size: cover;
 	background-position: center;
 }
@@ -44,20 +29,15 @@
 .swiper-slide:nth-child(4n + 3) {
 	background-image: url("./images/chalkboard.jpg");
 	background-repeat: no-repeat;
-	/* width: 100%; */
-	/* height: 800px; */
 	background-size: cover;
 }
 /* 4の倍数＋4枚目のスライドのスタイル（4枚目、8枚目…） */
 .swiper-slide:nth-child(4n + 4) {
 	background-image: url("./images/whitesmartphone.jpg");
 	background-repeat: no-repeat;
-	/* width: 100%; */
-	/* height: 800px; */
 	background-size: cover;
 }
 .baumkuchen-aki-main {
-	/* margin: 16%; */
 	text-align: center;
 	margin: 8rem auto 5rem;
 }
@@ -98,7 +78,7 @@
 	border-top: solid 4px #000000;
 	border-bottom: solid 4px #000000;
 	display: flex;
-	width: 360px;
+	width: 320px;
 	height: 280px;
 	padding: 6%;
 }
@@ -121,7 +101,7 @@ h3 {
 .baumkuchen-aki-teamItem {
 	border: 1px solid #000000;
 	display: flex;
-	width: 360px;
+	width: 320px;
 	height: 240px;
 	margin-left: -1px;
 }
@@ -129,31 +109,57 @@ h3 {
 	display: block;
 	text-align: center;
 }
-/* .baumkuchen-aki-team {
-	margin: 0;
-	padding: 0;
-} */
+
 /*============================================================
 news
 =============================================================*/
-
-/*news一覧
+/*news一覧 上下黒ボーダーバージョン
 -------------------------------------------------------------*/
 .news {
 	margin-bottom: 10rem;
 	position: relative;
 }
-.news__box {
-	border: solid 1px #333;
-	width: calc(100% / 3);
-	padding: 10px;
-	min-height: 8rem;
-}
 .news__box-wapper {
-	display: flex;
-	flex-wrap: wrap;
 	width: 90%;
 	margin: auto;
+	padding: 1rem 0;
+	border-top: solid 4px #000000;
+	border-bottom: solid 4px #000000;
+}
+.news__box {
+	display: flex;
+	border-bottom: 1px solid black;
+	min-height: 6rem;
+}
+.news__box:last-of-type {
+	border-bottom: 0;
+}
+.news__box p {
+	width: 72%;
+	line-height: 2rem;
+}
+.news__box-published {
+	width: 17%;
+	line-height: 2rem;
+	position: relative;
+	font-weight: bold;
+}
+/*nweの表示*/
+.news__box:nth-child(1) time:after {
+	content: "new";
+	background-color: #5f9ea070;
+	border-radius: 5px;
+	padding: 0rem 0.3rem;
+	/* margin-left: 2rem; */
+	position: absolute;
+	top: 40%;
+	left: 9%;
+}
+/*hover時の動き*/
+.news__box:hover {
+	box-shadow: 4px 3px 9px 1px #0000004d;
+	background-color: rgb(230, 230, 230);
+	zoom: 1.5;
 }
 
 /*network photo
@@ -186,31 +192,6 @@ news
 /*
 memmbers12の写真
 -----------------------------------------------------------------*/
-/*kiitoバージョン*/
-/* .who__memmber {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	line-height: 0; */ /*写真の下にできる余白を打ち消す*/ /*
-	margin-top: 5rem;
-}*/
-/*.who__memmber div {
-	flex-basis: calc(100% / 6 - 2px);
-	min-width: calc(100% / 6 - 2px);
-}
-.who__memmber div img {
-	width: 100%;
-	height: auto;
-	max-width: 50rem;
-	min-width: 7.7rem;
-}*/
-/*makerzのロゴのみoutline入れる*/
-/* .who__memmber div:first-child {
-	outline: 1px solid #333;
-} */
-
-/*LIGバージョン*/
 .who__memmber {
 	width: 90%;
 	margin: auto;
