@@ -147,7 +147,7 @@ news
 /*nweの表示*/
 .news__box:nth-child(1) time:after {
 	content: "new";
-	background-color: #5f9ea070;
+	background-color: hsla(182, 25%, 50%, 0.439);
 	border-radius: 5px;
 	padding: 0rem 0.3rem;
 	/* margin-left: 2rem; */
