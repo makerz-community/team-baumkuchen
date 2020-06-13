@@ -6,25 +6,13 @@ body * {
 	box-sizing: border-box;
 }
 main{
-    margin: 0 auto;
-    padding: 40px;
-    padding-bottom: 60px;
+    text-align: center;
+
 }
 .membersphoto{
-    padding-left: 40px;
-    display: inline-block;
-    width: 40em;
-    height: 30em;
-    line-height: 100px;
-}
-.member_detail_content{
-    display: inline-block; 
-    padding:  20px;     
-    height: 200px;
-    margin-top: 200px;
-    vertical-align: top;
-}
+    padding: 2em;
 
+}
 .member_detail_skill{
     display: flex;
     padding: 10px;
@@ -38,7 +26,6 @@ main{
 .member_comment{
     border-top:solid 1px #838282;
     padding: 40px;
-    margin: 10px;
-    
+    margin: 10px;  
 }
 

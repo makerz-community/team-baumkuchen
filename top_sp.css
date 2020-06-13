@@ -1,62 +1,62 @@
 @media screen and (max-width: 770px) {
-	/*770px以下で適用する内容*/
+  /*770px以下で適用する内容*/
 
-	/* 全体のスタイル */
-	.swiper-container {
-		margin: 10px 10px;
-		width: 100%;
-		/* height: 24em; */
-		text-align: center;
-		/* line-height: 800px; */
-		height: inherit;
-	}
-	/* 全スライド共通スタイル */
-	.swiper-slide {
-		background-size: 100% auto;
-		width: 100%;
-		height: auto;
-	}
-	.swiper-wrapper {
-		width: 100%;
-	}
-	/* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
-	.swiper-slide:nth-child(4n + 1),
+  /* 全体のスタイル */
+  .swiper-container {
+    margin: 10px 10px;
+    width: 100%;
+    /* height: 24em; */
+    text-align: center;
+    /* line-height: 800px; */
+    height: inherit;
+  }
+  /* 全スライド共通スタイル */
+  .swiper-slide {
+    background-size: 100% auto;
+    width: 100%;
+    height: auto;
+  }
+  .swiper-wrapper {
+    width: 100%;
+  }
+  /* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
+  .swiper-slide:nth-child(4n + 1),
 	/* 4の倍数＋2枚目のスライドのスタイル（2枚目、6枚目…） */
 	.swiper-slide:nth-child(4n + 2),
 	/* 4の倍数＋3枚目のスライドのスタイル（3枚目、7枚目…） */
 	.swiper-slide:nth-child(4n + 3),
 	/* 4の倍数＋4枚目のスライドのスタイル（4枚目、8枚目…） */
 	.swiper-slide:nth-child(4n + 4) {
-		height: 90vh;
-	}
+    height: 90vh;
+  }
 
-	/*============================================================
+  /*============================================================
 news
 =============================================================*/
-	/*news一覧*/
-	.news__box-wapper {
-		display: block;
-	}
-	.news__box {
-		width: 100%;
-	}
-	/*memmbers12の写真  kiitoバージョン*/
-	/*.news .who__memmber div img {
+  /*news一覧*/
+  .news__box-wapper {
+    display: block;
+  }
+  .news__box {
+    width: 100%;
+  }
+  /*memmbers12の写真  kiitoバージョン*/
+  /*.news .who__memmber div img {
 		max-width: 13rem;
 		min-width: 2.7rem;
 	}*/
-	/*memmbers12の写真  LIGバージョン*/
-	.who__memmber div {
-		width: calc(100% / 2 - 2rem);
-		margin: 0 4rem 2rem 0;
-	}
-	.who__memmber > div:nth-of-type(2n) {
-		margin-right: 0;
-	}
-	/*============================================================
+  /*memmbers12の写真  LIGバージョン*/
+  .who__memmber div {
+    width: calc(100% / 2 - 2rem);
+    margin: 0 4rem 2rem 0;
+  }
+  .who__memmber > div:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  /*============================================================
 access
 =============================================================*/
-	.access__wapper {
-		display: none;
-	}
+  .access__wapper {
+    display: none;
+  }
 }
