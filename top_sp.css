@@ -40,17 +40,17 @@ news
 	.news__box {
 		width: 100%;
 	}
-	/*memmbers12の写真  kiitoバージョン*/
-	/*.news .who__memmber div img {
+	/*members12の写真  kiitoバージョン*/
+	/*.news .who_member div img {
 		max-width: 13rem;
 		min-width: 2.7rem;
 	}*/
-	/*memmbers12の写真  LIGバージョン*/
-	.who__memmber div {
+	/*members12の写真  LIGバージョン*/
+	.who_member div {
 		width: calc(100% / 2 - 2rem);
 		margin: 0 4rem 2rem 0;
 	}
-	.who__memmber > div:nth-of-type(2n) {
+	.who_member > div:nth-of-type(2n) {
 		margin-right: 0;
 	}
 	/*============================================================
